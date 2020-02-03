@@ -12,7 +12,7 @@ function Home (props) {
         <br></br>
         Currently learning GraphQl + Apollo.
         <br></br> 
-        Drop me an email at <a href="mailto:ryanerenteria@gmail.com" target="_blank" >ryanerenteria@gmail.com</a> and let's make some magic ✨
+        Drop me an email at <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" >ryanerenteria@gmail.com</a> and let's make some magic ✨
       </p>
       <img src={me} className="logo" alt="Logo Image" />
     </div>
