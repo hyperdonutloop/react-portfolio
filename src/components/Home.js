@@ -6,8 +6,8 @@ function Home (props) {
     <div>
       <p>Hello 👋🏼.</p>
       <p>I build things using {' '}
-        <a href="https://reactjs.org/" target="_blank">React</a>,
-        <a href="https://redux.js.org/introduction/getting-started" target="_blank">Redux</a>, and {' '}
+        <a href="https://reactjs.org/" target="_blank">React</a>,{' '}
+        <a href="https://redux.js.org/" target="_blank">Redux</a>, and {' '}
         <a href="https://nodejs.dev/" target="_blank">Node</a>.
         <br></br>
         Currently learning GraphQl + Apollo.
