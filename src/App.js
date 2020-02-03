@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import me from './images/me.png';
 
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import About from './components/About.js';
@@ -22,7 +22,6 @@ function App() {
         
 
         <div className="navigation">
-          <img src={logo} className="logo" alt="Logo Image" />
           <div className="navigation-sub">
 
             {/* Setting up links */}
