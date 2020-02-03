@@ -26,9 +26,10 @@ function App() {
           <div className="navigation-sub">
 
             {/* Setting up links */}
-            <a href="" className="item">About</a>
-            <a href="" className="item">Projects</a>
-            <a href="" className="item">Contact</a>
+            <Link to="/" className="item">Home</Link>
+            <Link to="/about" className="item">About</Link>
+            <Link to="/projects" className="item">Projects</Link>
+            <Link to="/contact" className="item">Contact</Link>
           </div>
         </div>
       </div>
