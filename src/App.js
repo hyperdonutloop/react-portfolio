@@ -1,7 +1,6 @@
 import React from 'react';
-import me from './images/me.png';
 
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
