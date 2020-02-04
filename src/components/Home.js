@@ -8,22 +8,24 @@ const Wrapper = styled.div`
     margin-right: auto;
     max-width: 1024px;
     width: 100%;
-    display: block;
     border: 2px solid pink;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
 
-    // .main {
-    //   justify-content: center;
-    //   align-items: center;
-    //   border: 3px solid green;
-    //   webkit-box-pack: center;
-    // }
-
-    .intro-text {
+    .middle-block {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      border: 3px solid purple;
     }
+
+    .main-font {
+      margin-bottom: 2rem;
+      border: 3px solid red;
+    }
+
 
     img {
       max-width: 100%;
@@ -49,35 +51,40 @@ const Wrapper = styled.div`
 function Home (props) {
   return (
     <Wrapper>
-      <div className="container">
-        <div className="main">
-          <div>
-            <div className="intro-text">
-              <img src={me} className="avatar" alt="logo" />
-              
-              <p> Hello <span role="img" aria-label="wave">👋🏼</span>.<br />
-                I build things using {' '}
-                <a 
-                  href="https://reactjs.org/" 
-                  target="_blank" 
-                  rel="noopener noreferrer">React</a>,{' '}
-                <a 
-                  href="https://redux.js.org/" 
-                  target="_blank" 
-                  rel="noopener noreferrer">Redux</a>, and {' '}
-                <a 
-                  href="https://nodejs.dev/" 
-                  target="_blank" 
-                  rel="noopener noreferrer">Node</a>.
-                <br></br>
-                Currently learning GraphQl + Apollo.
-                <br></br> 
-                Drop me an email at <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">ryanerenteria@gmail.com</a> and let's make some magic ✨
-              </p>
+      <section>
+        <div className="container">
+          <div className="middle-block">
+          <img src={me} className="avatar" alt="logo" />
+            <div>
+              <div className="main-font">
+                <p> Hello <span role="img" aria-label="wave">👋🏼</span>.<br />
+                  I build things using {' '}
+                  <a 
+                    href="https://reactjs.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">React</a>,{' '}
+                  <a 
+                    href="https://redux.js.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">Redux</a>, and {' '}
+                  <a 
+                    href="https://nodejs.dev/" 
+                    target="_blank" 
+                    rel="noopener noreferrer">Node</a>.
+                  <br></br>
+                  Currently learning GraphQl + Apollo.
+                  <br></br>
+                
+                </p>
+              </div>
+              <div>
+                  Drop me an email at <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">ryanerenteria@gmail.com</a> and let's make some magic ✨
+                </div>
             </div>
+            
           </div>
         </div>
-      </div>
+      </section>
     </Wrapper>
   )
 }
