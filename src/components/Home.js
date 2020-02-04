@@ -6,19 +6,24 @@ const Wrapper = styled.div`
   .container {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10rem;
     max-width: 1024px;
     width: 100%;
     border: 2px solid pink;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    padding: 1rem;
+    border: 5px dotted palevioletred;
     
-
     .middle-block {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       border: 3px solid purple;
+      
+      
+      
     }
 
     .main-font {
@@ -39,7 +44,10 @@ const Wrapper = styled.div`
     p {
       font-size: 2.25rem;
     }
-  
+    
+    a {
+      text-decoration: none;
+    }
   }
 
   
