@@ -5,7 +5,7 @@ import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 import Home from './components/Home';
-import './App.css';
+// import './App.css';
 import Navigation from './components/Navigation';
 
 
