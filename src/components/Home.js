@@ -2,8 +2,24 @@ import React from "react"
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+// styled components
 import { Wrapper } from './Home-Styles.js';
-import { MotionBox } from './Home-Styles.js';
+
+// function Mark({
+//   className,
+//   color = 'gray',
+//   ...props
+// }: React.ComponentProps<'a'>) {
+//   return (
+//     <motion.div className="inline-block" whileHover={{ y: -4 }}>
+//       <a
+//         {...props}
+//         rel="noopener noreferrer"
+//         target="_blank"
+//       />
+//     </motion.div>
+//   )
+// }
 
 function Home (props) {
   const [ day, setDay ] = React.useState('day')
@@ -33,11 +49,14 @@ function Home (props) {
                 Hello{' '} 
                 <span role="img" aria-label="wave">👋🏼</span>.
                 <br />I build things using{' '}
-                <a 
+                <motion.div className="inline-block" whileHover={{ y: -4 }}
+                 
+                 
+      
                   href="https://reactjs.org/" 
                   target="_blank" 
                   rel="noopener noreferrer" children="React">
-                </a>
+                </motion.div>
                   ,{' '}
                 <a
                   href="https://redux.js.org/" 

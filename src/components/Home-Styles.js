@@ -50,15 +50,17 @@ import { motion } from 'framer-motion';
       font-size: 1.25rem;
     }
     
-   
+   div.inline-block {
+     border: 2px solid purple;
+     vertical-align: top;
+     display:inline-block;
+     color: #A0A4D9;
+    
+      // margin-:2px;
+      // height:100px;
+    //  width:25px;
+   }
   
 
   }
-`;
-
- export const MotionBox = styled(motion.div)`
-  background-color: red;
-  float: none;
-  clear: none;
-
 `;
