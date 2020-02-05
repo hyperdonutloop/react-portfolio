@@ -5,22 +5,6 @@ import { motion } from 'framer-motion';
 // styled components
 import { Wrapper } from './Home-Styles.js';
 
-// function Mark({
-//   className,
-//   color = 'gray',
-//   ...props
-// }: React.ComponentProps<'a'>) {
-//   return (
-//     <motion.div className="inline-block" whileHover={{ y: -4 }}>
-//       <a
-//         {...props}
-//         rel="noopener noreferrer"
-//         target="_blank"
-//       />
-//     </motion.div>
-//   )
-// }
-
 const theBounceVariants = {
   start: {
     y: "50%"
@@ -88,8 +72,8 @@ function Home (props) {
                     href="https://nodejs.dev/" 
                     target="_blank" 
                     rel="noopener noreferrer" children="Node"
-                  />.
-                </motion.div>
+                  />
+                </motion.div>.
                 <br />
                 Currently learning GraphQL + Apollo.<br /> 
                 Have an awesome {day}.
@@ -97,7 +81,14 @@ function Home (props) {
 
               <div className="bottom-text">
                 <p>
-                Drop me an <a style={{color: '#A0A4D9'}} href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> and let's make some magic ✨</p>
+                Drop me an{' '}
+                <motion.div 
+                  className="inline-block-mail" 
+                  whileHover={{ y: -4, transition: theBounce}} 
+                  variants={theBounceVariants}
+                >
+                  <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> 
+                </motion.div> and let's make some magic ✨</p>
               </div>
             </div>    
         </div>

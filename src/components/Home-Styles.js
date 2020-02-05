@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
  export const Wrapper = styled.div`
   .container {
@@ -11,7 +10,7 @@ import { motion } from 'framer-motion';
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding: 1rem;
-    border: 5px dotted palevioletred;
+    // border: 5px dotted palevioletred;
     display: flex;
     flex-direction: row;
 
@@ -19,7 +18,7 @@ import { motion } from 'framer-motion';
      
       margin-top: 4rem;
       margin-bottom: 4rem;
-      border: 3px solid red;
+      // border: 3px solid red;
       font-size: 2.25rem;
       color: #FFFFFF;
 
@@ -51,14 +50,16 @@ import { motion } from 'framer-motion';
     }
     
    div.inline-block {
-    //  border: 2px solid purple;
      vertical-align: top;
      display:inline-block;
      color: #A0A4D9;
     
-      // margin-:2px;
-      // height:100px;
-    //  width:25px;
+   }
+
+   div.inline-block-mail {
+    vertical-align: top;
+    display:inline-block;
+    color: #A0A4D9;
    }
   
 
