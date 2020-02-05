@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
  export const Wrapper = styled.div`
   .container {
@@ -15,16 +16,16 @@ import styled from 'styled-components';
     flex-direction: row;
 
     .main-font {
+     
       margin-top: 4rem;
       margin-bottom: 4rem;
       border: 3px solid red;
       font-size: 2.25rem;
       color: #FFFFFF;
 
-      email {
-        text-decoration: none;
-        !important;
-        background-color: lightblue;
+      div.motion {
+        max-width: 20%;
+        border: 2px solid green;
       }
     }
 
@@ -39,13 +40,25 @@ import styled from 'styled-components';
       
     }
 
-    p {
-      font-size: 2.25rem;
-    }
-    
     a {
       text-decoration: none;
+      color: #A0A4D9;
     }
 
+    p {
+      color: #FFFFFF;
+      font-size: 1.25rem;
+    }
+    
+   
+  
+
   }
+`;
+
+ export const MotionBox = styled(motion.div)`
+  background-color: red;
+  float: none;
+  clear: none;
+
 `;

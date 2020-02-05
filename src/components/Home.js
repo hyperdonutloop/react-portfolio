@@ -3,9 +3,15 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import { Wrapper } from './Home-Styles.js';
-
+import { MotionBox } from './Home-Styles.js';
 
 function Home (props) {
+  const [ day, setDay ] = React.useState('day')
+
+  React.useEffect(() => {
+    const days = 'Sunday Monday Tuesday Wednesday Thursday Friday Saturday'
+    setDay(days.split(' ')[new Date().getDay()])
+  }, [])
   return (
     <Wrapper>
       <section>
@@ -26,30 +32,29 @@ function Home (props) {
               <div className="main-font">
                 Hello{' '} 
                 <span role="img" aria-label="wave">👋🏼</span>.
-                <br /> I build things using{' '}
+                <br />I build things using{' '}
                 <a 
-                  style={{color: '#A0A4D9'}} 
-                  whileHover={{ y: -9 }} 
                   href="https://reactjs.org/" 
                   target="_blank" 
-                  rel="noopener noreferrer" children="React" 
-                />,{' '}
+                  rel="noopener noreferrer" children="React">
+                </a>
+                  ,{' '}
                 <a
-                  style={{color: '#A0A4D9'}}
                   href="https://redux.js.org/" 
                   target="_blank" 
                   rel="noopener noreferrer" children="Redux" />, and {' '}
                 <a
-                  style={{color: '#A0A4D9'}} 
                   href="https://nodejs.dev/" 
                   target="_blank" 
                   rel="noopener noreferrer">Node</a>.
                 <br />
-                Currently learning GraphQL + Apollo.
-                <br></br>
+                Currently learning GraphQL + Apollo.<br /> 
+                Have an awesome {day}.
               </div>
-              <div>
-                Drop me an <a style={{color: '#A0A4D9'}} href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> and let's make some magic ✨
+
+              <div className="bottom-text">
+                <p>
+                Drop me an <a style={{color: '#A0A4D9'}} href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> and let's make some magic ✨</p>
               </div>
             </div>    
         </div>
