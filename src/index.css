@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #27292D;
+  /* background-color: #27292D; */
   min-height: 100%;
   
 }
@@ -18,7 +18,7 @@ code {
     monospace;
 }
 
-p, a {
+/* p, a {
   color: #FFFFFF;
 }
 
@@ -28,4 +28,4 @@ h1, h2, h3 {
 
 .navigation-sub {
   color: #A0A4D9;
-}
+} */
