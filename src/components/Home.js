@@ -1,53 +1,24 @@
 import React from "react"
-import me from '../images/me.png'
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { Frame } from 'framer';
 
-const Wrapper = styled.div`
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10rem;
-    max-width: 1024px;
-    width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding: 1rem;
-    border: 5px dotted palevioletred;
-    display: flex;
-    flex-direction: row;
+import { Wrapper } from './Home-Styles.js';
 
-    .main-font {
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      border: 3px solid red;
-      font-size: 2.25rem;
-    }
-
-
-    img {
-      max-width: 100%;
-      height: auto;
-      object-fit: contain;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      margin-top: 2rem;
-      
-    }
-
-    p {
-      font-size: 2.25rem;
-    }
-    
-    a {
-      text-decoration: none;
-    }
-  }
-`;
-
-
-
+function Mark({
+  className,
+  color = 'gray',
+  ...props
+}: React.Component<'a'>) {
+  return (
+    <motion.div className="inline-block" whileHover={{ y: -4 }}>
+      <a
+        {...props}
+        rel="noopener noreferrer"
+        target="_blank"
+      />
+    </motion.div>
+  )
+}
 
 function Home (props) {
   return (
@@ -58,44 +29,42 @@ function Home (props) {
               drag 
               dragConstraints={{top: -20, left: -30, right: -30, bottom: -30}} 
               dragElastic={0.4}
-              whileHover={{ rotate: 6, scale: 1.05 }} 
-              whileTap={{ rotate: 1, scale: 1.05}}
+              whileHover={{ rotate: 2, scale: 1.05 }} 
+              whileTap={{ rotate: 1, scale: 0.9}}
               transition={{ duration: 0.2, ease: 'easeOut' }}
               className="avatar"
               src={require('../images/me.png')}
               alt="memoji"
             />
 
-            <div className="main-font">
-              Hello{' '} 
-              <span role="img" aria-label="wave">👋🏼</span>.
-              <br />
-              I build things using {' '}
-                <a
-                  whileHover={{ y: -4 }}
+            <div>
+              <div className="main-font">
+                Hello{' '} 
+                <span role="img" aria-label="wave">👋🏼</span>.
+                <br /> I build things using{' '}
+                <a 
+                  style={{color: '#A0A4D9'}} 
+                  whileHover={{ y: -9 }} 
                   href="https://reactjs.org/" 
                   target="_blank" 
-                  rel="noopener noreferrer">React</a>
-                  {/* whileHover={{ y: -8 }}
-                  transition={{ duration: 0.2, ease: 'easeOut' }}
-                  
+                  rel="noopener noreferrer" children="React" 
+                />,{' '}
+                <a
+                  style={{color: '#A0A4D9'}}
+                  href="https://redux.js.org/" 
                   target="_blank" 
-                  rel="noopener noreferrer",{' '} */}
-              
-              <a 
-                href="https://redux.js.org/" 
-                target="_blank" 
-                rel="noopener noreferrer">Redux</a>, and {' '}
-              <a 
-                href="https://nodejs.dev/" 
-                target="_blank" 
-                rel="noopener noreferrer">Node</a>.
-              <br></br>
-              Currently learning GraphQL + Apollo.
-              <br></br>
-
+                  rel="noopener noreferrer" children="Redux" />, and {' '}
+                <a
+                  style={{color: '#A0A4D9'}} 
+                  href="https://nodejs.dev/" 
+                  target="_blank" 
+                  rel="noopener noreferrer">Node</a>.
+                <br />
+                Currently learning GraphQL + Apollo.
+                <br></br>
+              </div>
               <div>
-                Drop me an <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> and let's make some magic ✨
+                Drop me an <a style={{color: '#A0A4D9'}} href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> and let's make some magic ✨
               </div>
             </div>    
         </div>
