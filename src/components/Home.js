@@ -4,21 +4,6 @@ import { motion } from 'framer-motion';
 
 import { Wrapper } from './Home-Styles.js';
 
-function Mark({
-  className,
-  color = 'gray',
-  ...props
-}: React.Component<'a'>) {
-  return (
-    <motion.div className="inline-block" whileHover={{ y: -4 }}>
-      <a
-        {...props}
-        rel="noopener noreferrer"
-        target="_blank"
-      />
-    </motion.div>
-  )
-}
 
 function Home (props) {
   return (
