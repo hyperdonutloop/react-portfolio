@@ -51,7 +51,7 @@ import { motion } from 'framer-motion';
     }
     
    div.inline-block {
-     border: 2px solid purple;
+    //  border: 2px solid purple;
      vertical-align: top;
      display:inline-block;
      color: #A0A4D9;

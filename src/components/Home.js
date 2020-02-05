@@ -21,6 +21,23 @@ import { Wrapper } from './Home-Styles.js';
 //   )
 // }
 
+const theBounceVariants = {
+  start: {
+    y: "50%"
+  },
+  end: {
+    y: "150%"
+  }
+};
+
+const theBounce = {
+  duration: 0.5,
+  yoyo: Infinity,
+  // ease: "easeInOut"
+}
+
+
+
 function Home (props) {
   const [ day, setDay ] = React.useState('day')
 
@@ -49,23 +66,30 @@ function Home (props) {
                 Hello{' '} 
                 <span role="img" aria-label="wave">👋🏼</span>.
                 <br />I build things using{' '}
-                <motion.div className="inline-block" whileHover={{ y: -4 }}
-                 
-                 
-      
+                <motion.div className="inline-block" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>
+                  <a
                   href="https://reactjs.org/" 
                   target="_blank" 
-                  rel="noopener noreferrer" children="React">
-                </motion.div>
+                  rel="noopener noreferrer" children="React"/></motion.div>
                   ,{' '}
+
+                <motion.div className="inline-block" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>
                 <a
                   href="https://redux.js.org/" 
                   target="_blank" 
-                  rel="noopener noreferrer" children="Redux" />, and {' '}
-                <a
-                  href="https://nodejs.dev/" 
-                  target="_blank" 
-                  rel="noopener noreferrer">Node</a>.
+                  rel="noopener noreferrer" children="Redux" /></motion.div>, and {' '}
+
+                <motion.div 
+                  className="inline-block" 
+                  whileHover={{ y: -8, transition: theBounce}} 
+                  variants={theBounceVariants}
+                >
+                  <a
+                    href="https://nodejs.dev/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" children="Node"
+                  />.
+                </motion.div>
                 <br />
                 Currently learning GraphQL + Apollo.<br /> 
                 Have an awesome {day}.
