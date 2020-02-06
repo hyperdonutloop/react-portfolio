@@ -1,9 +1,9 @@
 import React from "react"
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 // styled components
-import { Wrapper } from './Home-Styles.js';
+import { Wrapper } from './styles/Home-Styles.js';
 
 const theBounceVariants = {
   start: {
@@ -20,8 +20,6 @@ const theBounce = {
   // ease: "easeInOut"
 }
 
-
-
 function Home (props) {
   const [ day, setDay ] = React.useState('day')
 
@@ -29,6 +27,7 @@ function Home (props) {
     const days = 'Sunday Monday Tuesday Wednesday Thursday Friday Saturday'
     setDay(days.split(' ')[new Date().getDay()])
   }, [])
+
   return (
     <Wrapper>
       <section>
@@ -76,6 +75,7 @@ function Home (props) {
                 </motion.div>.
                 <br />
                 Currently learning GraphQL + Apollo.<br /> 
+                Based in Carlsbad, California. <br />
                 Have an awesome {day}.
               </div>
 
