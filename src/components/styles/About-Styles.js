@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10rem;
+    margin-top: 7rem;
     max-width: 50rem;
     width: 100%;
     padding-top: 3rem;
@@ -18,17 +18,14 @@ export const Wrapper = styled.div`
 
     h1, h2, h3, h5 {
       color: #FFFFFF;
-      border: 2px dotted green;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
+      // border: 2px dotted green;
     }
 
     li {
       color: #FFFFFF;
       list-style: none;
-    
-      // padding: 3px;
-      border: 2px dotted blue;
     }
     a {
       text-decoration: none;
@@ -44,22 +41,32 @@ export const Wrapper = styled.div`
     }
 
     .sections {
-      border: 2px solid green;
+      // border: 2px solid green;
       
       
       ul {
-        // display: flex;
-        // flex-direction: column;
         padding-left: 0;
-        padding: 1rem;
+        // padding: 1rem;
+        // margin: 1rem;
+        // border: 2px dotted pink;
       }
       
     }
 
     .things {
       display: flex;
-      justify-content: space-evenly;
-      border: 2px solid red;
+      justify-content: space-around;
+      // align-items: center;
+      
+      // border: 2px solid red;
+    }
+
+    h5 {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 1.125rem;
+      // line-height: 1.5;
+      // border: 3px dotted purple;
     }
   }
 `;
