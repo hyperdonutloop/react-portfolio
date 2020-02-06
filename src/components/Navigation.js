@@ -1,16 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//styles
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    // border: 2px dotted pink;
+
+    .links a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #e2e8f0;
+      margin: 1rem;
+    }
+  }
+`;
+
 const Navigation = () => {
   return (
-    <div>
-      <div className="App">
-        <Link to="/" className="item">Home</Link>
-        <Link to="/about" className="item">About</Link>
-        <Link to="/projects" className="item">Projects</Link>
-        <Link to="/contact" className="item">Contact</Link>
+    <Wrapper>
+      <div className="navigation">
+        <div className="links">
+          <Link to="/" className="item">Home</Link>
+          <Link to="/about" className="item">About</Link>
+          <Link to="/projects" className="item">Projects</Link>
+          <Link to="/contact" className="item">Contact</Link>
+        </div>
       </div>
-    </div>
+    </Wrapper>
+    
   )
 }
 

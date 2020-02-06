@@ -6,11 +6,11 @@ import styled from 'styled-components';
     margin-right: auto;
     margin-top: 10rem;
     max-width: 1024px;
-    width: 100%;
+    // width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding: 1rem;
-    // border: 5px dotted palevioletred;
+    border: 5px dotted palevioletred;
     display: flex;
     flex-direction: row;
 
