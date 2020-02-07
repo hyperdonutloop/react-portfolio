@@ -19,7 +19,42 @@ code {
 }
 
 
+.dark-mode {
+  color: #fff;
+  background-color: #27292D;
 
+  /* .navbar {
+    background-color: #1F2022;
+    border: none;
+  } */
+}
+
+.sun {
+  background: url('../src/images/switch/sun.svg') 
+  no-repeat center;
+  background-size: 100%;
+  border: 2px dotted blue;
+  /* height: 17px;
+  width: 17px; */
+}
+.moon {
+  background: url('../src/images/switch/moon.svg') 
+  no-repeat center;
+  background-size: 100%;
+  border: 2px dotted blue;
+  /* height: 17px; */
+}
+
+.sun-white {
+  background: url('../src/images/switch/sun-white.svg') 
+  no-repeat center;
+  background-size: 100%;
+}
+.moon-white {
+  background: url('../src/images/switch/moon-white.svg') 
+  no-repeat center;
+  background-size: 100%;
+}
 /* .main-font {
   color: #FFFFFF;
 }
