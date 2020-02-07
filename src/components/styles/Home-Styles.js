@@ -15,6 +15,24 @@ import styled from 'styled-components';
     flex-direction: row;
 
     .main-font {
+
+      span.wave {
+        animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;          /* Change to speed up or slow down */
+        animation-iteration-count: infinite;    /* Never stop waving :) */
+        transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
+        display: inline-block;
+      }
+
+        @keyframes wave-animation {
+          0% { transform: rotate(  0.0deg) }
+          10% { transform: rotate(-10.0deg) }    
+          20% { transform: rotate( 12.0deg) }
+          30% { transform: rotate(-10.0deg) }
+          40% { transform: rotate(  9.0deg) }
+          50% { transform: rotate(  0.0deg) }    /* Reset for the last half to pause */
+          100% { transform: rotate(  0.0deg) }
+        }
      
       margin-top: 4rem;
       margin-bottom: 4rem;
@@ -27,6 +45,8 @@ import styled from 'styled-components';
         max-width: 20%;
         border: 2px solid green;
       }
+
+
     }
 
 
@@ -62,6 +82,16 @@ import styled from 'styled-components';
     vertical-align: top;
     display:inline-block;
     color: #A0A4D9;
+   }
+
+   .twitter {
+     padding: 0.3rem;
+     /* border: 2px dotted green; */
+   }
+
+   .github {
+     /* border: 2px dotted green; */
+     padding: 0.3rem;
    }
   
 

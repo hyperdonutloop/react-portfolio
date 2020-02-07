@@ -1,10 +1,11 @@
 import React from "react"
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 // styled components
 import { Wrapper } from './styles/Home-Styles.js';
-import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 
 
@@ -51,7 +52,7 @@ function Home (props) {
             <div>
               <div className="main-font">
                 Hello{' '} 
-                <span role="img" aria-label="wave">👋🏼</span>.
+                <span class="wave">👋🏼</span>.
                 <br />I build things using{' '}
                 <motion.div className="inline-block" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>
                   <a
@@ -79,10 +80,7 @@ function Home (props) {
                 </motion.div>.
                 <br />
                 Currently learning GraphQL + Apollo.<br /> 
-                Based in Carlsbad, California. <br />
                 Have an awesome {day}.
-                <FontAwesomeIcon icon={faTwitter} style={{ color: '#A0A4D9' }} size="sm" />
-                <FontAwesomeIcon icon={faGithub} style={{ color: '#A0A4D9' }} size="sm" />
               </div>
 
               <div className="bottom-text">
@@ -95,6 +93,28 @@ function Home (props) {
                 >
                   <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> 
                 </motion.div> and let's make some magic ✨</p>
+              </div>
+              <div className="icons">
+                <a
+                  className="twitter"
+                  href="https://twitter.com/hyperdonutloop" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  <FontAwesomeIcon 
+                  icon={faTwitter} 
+                  style={{ color: '#A0A4D9' }} 
+                  size="sm" />
+                </a>
+                <a 
+                  className="github"
+                  href="https://github.com/hyperdonutloop" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  <FontAwesomeIcon 
+                  icon={faGithub} 
+                  style={{ color: '#A0A4D9' }} 
+                  size="sm" />
+                </a>
               </div>
             </div>    
         </div>
