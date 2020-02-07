@@ -37,3 +37,13 @@
     transform: rotate(360deg);
   }
 }
+
+.dark-mode {
+  color: #fff;
+  background-color: #27292D;
+
+  /* .navbar {
+    background-color: #1F2022;
+    border: none;
+  } */
+}

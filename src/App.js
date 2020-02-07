@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+
 
 import About from './components/About.js';
 import Projects from './components/Projects.js';

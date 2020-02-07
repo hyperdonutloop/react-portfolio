@@ -38,7 +38,7 @@ import styled from 'styled-components';
       margin-bottom: 4rem;
       // border: 3px solid red;
       font-size: 2.25rem;
-      color: #FFFFFF;
+      /* color: #FFFFFF; */
       /* margin-left: 2rem; */
 
       div.motion {
@@ -67,7 +67,7 @@ import styled from 'styled-components';
     }
 
     p {
-      color: #FFFFFF;
+      /* color: #FFFFFF; */
       font-size: 1.25rem;
     }
     

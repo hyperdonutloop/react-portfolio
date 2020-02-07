@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
     justify-content: flex-end;
     padding-top: 2%;
     padding-bottom: 1%;
+    background-color: #1f2022;
+    border: none;
     // border: 2px dotted pink;
 
     .links a {
@@ -16,66 +18,28 @@ export const Wrapper = styled.div`
       // border: 2px solid blue;
     }
 
-  .switch-wrapper {
-    display: flex;
-    align-items: center;
-    border: 2px solid blue;
-    justify-content: center;
-    margin-top: -1rem;
-    /* margin-bottom: 2rem; */
-    /* top: 20px;
-    right: 30px; */
-  
-  .sun, .moon {
-    width: 17px;
-    height: 17px;
-  }
-  .sun {
-    background: url('../../images/switch/sun.svg') no-repeat center;
-    background-size: 100%;
-  }
-  .moon {
-    background: url('../../images/switch/moon.svg') no-repeat center;
-    background-size: 100%;
-  }
-  .toggle-wrapper {
-    margin: 10px;
-    #switch {
-      height: 0;
-      width: 0;
-      visibility: hidden;
-      position: absolute;
-      &:checked + label {
-        background: $green;
-      }
-      &:checked + label:after {
-        left: calc(100% - 3px);
-        transform: translateX(-100%);
-      }
+    .dark-mode__toggle {
+      background: papayawhip;
+      border-radius: 50px;
+      border: 1px solid black;
+      height: 20px;
+      position: relative;
+      width: 40px;
     }
 
-    label {
-      cursor: pointer;
-      text-indent: -9999px;
-      width: 45px;
-      height: 25px;
-      background: #A0A4D9;
-      display: block;
-      border-radius: 100px;
-      position: relative;
-      &:after {
-        @include transition;
-        content: '';
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        width: 19px;
-        height: 19px;
-        background: #fff;
-        border-radius: 100%;
-      }
+    .toggle {
+      background: #f68819;
+      border-radius: 50px;
+      height: 18px;
+      left: 0;
+      position: absolute;
+      transition: 0.2s;
+      width: 20px;
     }
-  }
-}
+
+    .toggled {
+      left: 18px;
+    }
+
   }
 `;

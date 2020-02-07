@@ -52,7 +52,7 @@ function Home (props) {
             <div>
               <div className="main-font">
                 Hello{' '} 
-                <span class="wave">👋🏼</span>.
+                <span className="wave" role="img" aria-label="wave">👋🏼</span>.
                 <br />I build things using{' '}
                 <motion.div className="inline-block" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>
                   <a
@@ -84,7 +84,7 @@ function Home (props) {
               </div>
 
               <div className="bottom-text">
-                <p>
+                <span>
                 Drop me an{' '}
                 <motion.div 
                   className="inline-block-mail" 
@@ -92,7 +92,7 @@ function Home (props) {
                   variants={theBounceVariants}
                 >
                   <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> 
-                </motion.div> and let's make some magic ✨</p>
+                </motion.div> and let's make some magic ✨</span>
               </div>
               <div className="icons">
                 <a
