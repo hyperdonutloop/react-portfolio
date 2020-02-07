@@ -1,9 +1,13 @@
 import React from "react"
-// import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // styled components
 import { Wrapper } from './styles/Home-Styles.js';
+import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+
+
+
 
 const theBounceVariants = {
   start: {
@@ -77,6 +81,8 @@ function Home (props) {
                 Currently learning GraphQL + Apollo.<br /> 
                 Based in Carlsbad, California. <br />
                 Have an awesome {day}.
+                <FontAwesomeIcon icon={faTwitter} style={{ color: '#A0A4D9' }} size="sm" />
+                <FontAwesomeIcon icon={faGithub} style={{ color: '#A0A4D9' }} size="sm" />
               </div>
 
               <div className="bottom-text">
