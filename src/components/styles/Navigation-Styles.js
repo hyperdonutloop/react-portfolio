@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
       text-decoration: none;
       color: #e2e8f0;
       // margin: 1rem;
-      border: 2px solid blue;
+      // border: 2px solid blue;
     }
   }
 `;

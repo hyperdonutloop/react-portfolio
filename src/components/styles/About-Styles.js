@@ -12,11 +12,16 @@ export const Wrapper = styled.div`
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding: 1rem;
-    border: 2px solid pink;
+    // border: 2px solid pink;
+    
+    .article, h1 {
+      color: #A0A4D9;
+      /* border: 2px dotted green; */
+      // margin-bottom: 4rem;
+    }
 
 
-
-    h1, h2, h3, h5 {
+    h2, h3, h5 {
       color: #FFFFFF;
       display: flex;
       // justify-content: space-between;

@@ -1,6 +1,7 @@
 import React from 'react';
-
 import { Route } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
@@ -15,11 +16,13 @@ function App() {
   return (
     <div className="navigation">
       <div className="navigation-sub">
+        
         <Navigation />
           <Route exact path="/" component={Home} />
           <Route path="/about" component ={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component ={Contact} />
+          
       </div>
     </div>
   );

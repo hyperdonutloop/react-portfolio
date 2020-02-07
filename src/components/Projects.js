@@ -2,8 +2,10 @@ import React from "react"
  
 function Projects (props) {
   return (
-    <div>
-      <h1>Projects</h1>
+    <div className="section">
+      <div className="contents">
+        <h1>Projects</h1>
+      </div>
     </div>
   )
 }

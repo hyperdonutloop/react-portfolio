@@ -10,7 +10,7 @@ import styled from 'styled-components';
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding: 1rem;
-    border: 5px dotted palevioletred;
+    /* border: 5px dotted palevioletred; */
     display: flex;
     flex-direction: row;
 
@@ -21,6 +21,7 @@ import styled from 'styled-components';
       // border: 3px solid red;
       font-size: 2.25rem;
       color: #FFFFFF;
+      /* margin-left: 2rem; */
 
       div.motion {
         max-width: 20%;
@@ -36,6 +37,7 @@ import styled from 'styled-components';
       padding-left: 2rem;
       padding-right: 0rem;
       margin-top: 2rem;
+      margin-left: 3rem;
       
     }
 

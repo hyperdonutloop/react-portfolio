@@ -1,7 +1,23 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 //styles
 import { Wrapper } from './styles/About-Styles.js'; 
+
+const theBounceVariants = {
+  start: {
+    y: "50%"
+  },
+  end: {
+    y: "150%"
+  }
+};
+
+const theBounce = {
+  duration: 0.5,
+  yoyo: Infinity,
+  // ease: "easeInOut"
+}
 
 function About (props) {
   return (
@@ -9,7 +25,9 @@ function About (props) {
       <div>
         <div className="main-section">
           <div className="article">
-            <h2>About Me</h2>
+            <motion.h1 className="about" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>About Me</motion.h1>
+            <br />
+            <h2>Who I am</h2>
             <p>My name is Ryan Renteria. I am a husband to a Princess and father to three wild beasts, Odin,     Mordecai, and Hyperion. My role models include, Elon Musk, Tony Stark, and Albus Dumbledore. Hanging out with my family, playing at the beach, and watching movies are a few of the things I enjoy. You can usually find me with cookies and chocolate milk. <br></br></p>
             <br></br> 
             <h2>What I do</h2>
