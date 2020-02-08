@@ -32,28 +32,35 @@ export const Wrapper = styled.div`
     } */
 
     .dark-mode__toggle {
-      background: #CE9ECE;
-      border-radius: 50px;
-      border: 1px solid black;
-      height: 20px;
+      background: #383B40;
+      border-radius: 100px;
+      /* border: 1px solid #383B40; */
+      height: 25px;
       position: relative;
-      width: 40px;
+      width: 45px;
+      text-indent: -9999px;
+      /* display: block; */
       /* border: 2px dotted blue; */
     }
 
     .toggle {
-      background: #FFFFFF;
-      border-radius: 50px;
-      height: 22px;
+      
+      background: #CE9ECE;
+      border-radius: 100%;
+      
       left: 0;
+      top: 3px;
+      left: 3px;
       position: absolute;
       transition: 0.2s;
-      width: 22px;
+      height: 19px;
+      width: 19px;
+      /* box-shadow: 0 0 10px #9ecaed; */
       /* border: 2px dotted green; */
     }
 
     .toggled {
-      left: 18px;
+      left: calc(100% - 23px);
     }
     .icons {
       display: flex;
