@@ -17,6 +17,9 @@ const Navigation = () => {
   return (
     <Wrapper>
       <div className="navigation">
+        <div className="ryan">
+          <a>🖇Ryan Renteria</a>
+        </div>
         <div className="links">
           <Link to="/" className="item" children="Home" />
           <Link to="/about" className="item">About</Link>
@@ -28,7 +31,7 @@ const Navigation = () => {
             <div className="dark-mode__toggle">
             
               <div
-                input id="switch"
+                // input id="switch"
                 label="switch"
                 id="toggle"
                 onClick={toggleMode}

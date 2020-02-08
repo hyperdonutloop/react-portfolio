@@ -3,12 +3,18 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   .navigation {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding-top: 2%;
     padding-bottom: 1%;
     /* background-color: #1f2022; */
-    border: none;
-   
+    /* border: 2px solid green; */
+    
+    .ryan {
+      /* border: 2px solid pink; */
+      flex-grow: 1;
+      display: block;
+      margin-left: 1rem;
+    }
 
     .links a {
       padding: 1rem;
@@ -17,7 +23,7 @@ export const Wrapper = styled.div`
       filter: contrast(1%);
       color: #000000;
       /* opacity: 80%; */
-      // margin: 1rem;
+      /* margin-top: 1rem; */
       /* // border: 2px solid blue; */
     }
 

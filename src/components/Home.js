@@ -6,10 +6,6 @@ import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 // styled components
 import { Wrapper } from './styles/Home-Styles.js';
 
-
-
-
-
 const theBounceVariants = {
   start: {
     y: "50%"
