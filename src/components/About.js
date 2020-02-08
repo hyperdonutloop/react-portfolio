@@ -35,37 +35,40 @@ function About (props) {
             <br></br>
             <h2>Things I know</h2>
 
-            <div className="things">
-              <div className="sections">
-                <h5>Front End</h5>
+            <div className="skillz">
+              <div className="skillz_category">
+                <div className="skillz_category_label">LANGUAGES</div>
                 <ul>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Styled Components</li>
-                  <li>Glamorous</li>
-                  <li>Framer-Motion</li>
-                  <li>Less CSS</li>
+                  <li className="skillz_category_item">Javascript(ES6)</li>
+                  <li className="skillz_category_item">HTML</li>
+                  <li className="skillz_category_item">(S)CSS</li>
+                  <li className="skillz_category_item">SQL</li>
                 </ul>
               </div>
 
-              <div className="sections">
-                <h5>Backend</h5>
+              <div className="skillz_category">
+                <div className="skillz_category_label">FRAMEWORKS</div>
                 <ul>
-                  <li>NodeJS</li>
-                  <li>Express</li>
-                  <li>SQLite</li>
-                  <li>PostgreSQL</li>
+                  <li className="skillz_category_item">React</li>
+                  <li className="skillz_category_item">Redux</li>
+                  <li className="skillz_category_item">Node</li>
+                  <li className="skillz_category_item">Framer-Motion</li>
+                  <li className="skillz_category_item">Styled Components</li>
+                  <li className="skillz_category_item">Glamorous</li>
+                  <li className="skillz_category_item">Framer-Motion</li>
                 </ul>
               </div>
 
-              <div className="sections">
-                <h5>Deployment</h5>
+              <div className="skillz_category">
+                <div className="skillz_category_label">TOOLS</div>
                 <ul>
-                  <li>ZEIT now</li>
-                  <li>Heroku</li>
-                  <li>Netlify</li>
+                  <li className="skillz_category_item">Visual Studio Code</li>
+                  <li className="skillz_category_item">Insomnia</li>
+                  <li className="skillz_category_item">Postman</li>
+                  <li className="skillz_category_item">Git & GitHub</li>
                 </ul>
               </div>
+
             </div>
         </div>
       </div>
