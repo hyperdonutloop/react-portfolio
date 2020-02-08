@@ -20,7 +20,7 @@ code {
 
 
 .dark-mode {
-  color: #fff;
+  color: #fff !important;
   background-color: #27292D;
 
   /* .navbar {
@@ -33,7 +33,7 @@ code {
   background: url('../src/images/switch/sun.svg') 
   no-repeat center;
   background-size: 100%;
-  border: 2px dotted blue;
+  /* border: 2px dotted blue; */
   /* height: 17px;
   width: 17px; */
 }
@@ -41,7 +41,7 @@ code {
   background: url('../src/images/switch/moon.svg') 
   no-repeat center;
   background-size: 100%;
-  border: 2px dotted blue;
+  /* border: 2px dotted blue; */
   /* height: 17px; */
 }
 

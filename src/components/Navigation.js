@@ -18,7 +18,7 @@ const Navigation = () => {
     <Wrapper>
       <div className="navigation">
         <div className="links">
-          <Link to="/" className="item">Home</Link>
+          <Link to="/" className="item" children="Home" />
           <Link to="/about" className="item">About</Link>
           <Link to="/projects" className="item">Projects</Link>
         </div>

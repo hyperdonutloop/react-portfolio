@@ -79,7 +79,7 @@ import styled from 'styled-components';
    }
 
    div.inline-block-mail {
-    vertical-align: top;
+    /* vertical-align: top; */
     display:inline-block;
     color: #A0A4D9;
    }

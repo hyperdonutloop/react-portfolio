@@ -8,14 +8,17 @@ export const Wrapper = styled.div`
     padding-bottom: 1%;
     /* background-color: #1f2022; */
     border: none;
-    // border: 2px dotted pink;
+   
 
     .links a {
       padding: 1rem;
       text-decoration: none;
-      color: #e2e8f0;
+      /* color: #B2B9C5; */
+      filter: contrast(1%);
+      color: #000000;
+      /* opacity: 80%; */
       // margin: 1rem;
-      // border: 2px solid blue;
+      /* // border: 2px solid blue; */
     }
 
     /* .sun, .moon {
@@ -70,8 +73,9 @@ export const Wrapper = styled.div`
       /* justify-content: center; */
       
       align-items: center;
-      border: 2px dotted green;
-      margin-top: -7px;
+      /* border: 2px dotted green; */
+      margin-top: -2px;
+      margin-right: 10px;
       
       /* position: absolute; */
       /* top: 20px;
@@ -81,14 +85,14 @@ export const Wrapper = styled.div`
       width: 15px;
       height: 15px;
       margin: 4px;
-      border: 2px solid green;
+      /* border: 2px solid green; */
     }
 
     .sun-white {
         width: 15px;
         height: 15px;
         margin: 4px;
-        border: 1px dotted papayawhip;
+        /* border: 1px dotted papayawhip; */
       }
     
     /* .toggle-wrapper {

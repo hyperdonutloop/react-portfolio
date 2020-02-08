@@ -91,7 +91,13 @@ function Home (props) {
                   whileHover={{ y: -4, transition: theBounce}} 
                   variants={theBounceVariants}
                 >
-                  <a href="mailto:ryanerenteria@gmail.com" className="email" target="_blank" rel="noopener noreferrer">email</a> 
+                  <a 
+                    href="mailto:ryanerenteria@gmail.com" 
+                    className="email" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    children="email" 
+                  /> 
                 </motion.div> and let's make some magic ✨</span>
               </div>
               <div className="icons">
