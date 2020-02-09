@@ -12,25 +12,18 @@ export const Wrapper = styled.div`
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding: 1rem;
-    // border: 2px solid pink;
+    /* border: 2px solid pink; */
     
-    .article, h1 {
-      /* color: #A0A4D9; */
-      /* border: 2px dotted green; */
-      // margin-bottom: 4rem;
-    }
-
-
-    h2, h3, h5 {
-      /* color: #FFFFFF; */
+    /* h2, h3, h5 {
       display: flex;
-      // justify-content: space-between;
-      // border: 2px dotted green;
-    }
+      justify-content: space-between;
+      border: 2px dotted green;
+    } */
 
     li {
       list-style: none;
     }
+
     a {
       text-decoration: none;
       color: #A0A4D9;
@@ -47,27 +40,28 @@ export const Wrapper = styled.div`
     .skillz {
       display: flex;
       justify-content: space-between;
-      border: 2px solid red;
-
+      /* border: 2px solid red; */
     }
 
     ul {
       display: flex;
       flex-direction: column;
       padding-right: 3px;
-      border: 2px dashed green;
+      /* border: 2px dashed blue; */
+      padding-inline-start: 0;
     }
 
     .skillz_category {
         display: flex;
         flex-direction: column;
         margin-right: 5rem;
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
+        
       }
 
       .skillz_category_item {
-        border: 2px dotted purple;
-        padding: 1px;
+        /* border: 2px dotted purple; */
+        padding: 2px;
         margin-right: auto;
       }
 
