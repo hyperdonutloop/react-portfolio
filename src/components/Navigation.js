@@ -18,7 +18,7 @@ const Navigation = () => {
     <Wrapper>
       <div className="navigation">
         <div className="ryan">
-          <a>🖇Ryan Renteria</a>
+          <Link to="/" className="me">🖇Ryan Renteria</Link>
         </div>
         <div className="links">
           <Link to="/" className="item" children="Home" />

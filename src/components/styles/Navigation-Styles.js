@@ -15,6 +15,12 @@ export const Wrapper = styled.div`
       display: block;
       margin-left: 1rem;
     }
+    
+    .me {
+      text-decoration: none;
+      filter: contrast(1%);
+      color: #000000;
+    }
 
     .links a {
       padding: 1rem;
