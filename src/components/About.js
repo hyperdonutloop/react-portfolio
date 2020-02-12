@@ -27,7 +27,7 @@ function About (props) {
           <div className="article">
             <br />
             <motion.h2 className="about" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>Who I am</motion.h2>
-            <p>My name is Ryan Renteria. I am a husband and father and have won the World's Greatest Dad championship for 6 years in a row. My role models include, Elon Musk, Tony Stark, and Albus Dumbledore. Hanging out with my family, playing at the beach, and watching movies are a few of the things I enjoy. You can usually find me with cookies and chocolate milk. <br></br></p>
+            <p>My name is Ryan Renteria. I am a husband and father and have won the World's Greatest Dad championship for 6 years in a row. My role models include, Elon Musk, Tony Stark, and Albus Dumbledore. Hanging out with my family, playing at the beach, and watching movies are a few of the things I enjoy. You can usually find me with cookies and chocolate milk.<br></br></p>
             <br></br> 
             <motion.h2 className="about" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>What I do</motion.h2>
             <p>I currently attend <a href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">Lambda School</a> while working part-time at Apple as a Mac Genius. Lambda School is a 9 month software engineering program that provides an immersive hands-on curriculum with a focus on computer science and full stack web development. While my main focus is programming, taking photos and making Youtube videos is one of my creative outlets.</p>
