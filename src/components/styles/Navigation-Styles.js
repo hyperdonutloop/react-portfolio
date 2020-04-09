@@ -16,18 +16,33 @@ export const Wrapper = styled.div`
       margin-left: 1rem;
     }
     
-    .me {
+    .me-wht {
       text-decoration: none;
-      filter: contrast(1%);
-      color: #000000;
+      /* filter: contrast(1%); */
+      color: white;
+    }
+
+    .me-dark {
+      text-decoration: none;
+      color: black;
+    }
+
+    .item-wht {
+      text-decoration: none;
+      color: white;
+    }
+
+    .item-drk {
+      text-decoration: none;
+      color: black;
     }
 
     .links a {
       padding: 1rem;
       text-decoration: none;
       /* color: #B2B9C5; */
-      filter: contrast(1%);
-      color: #000000;
+      /* filter: contrast(1%); */
+      /* color: #000000; */
       /* opacity: 80%; */
       /* margin-top: 1rem; */
       /* // border: 2px solid blue; */

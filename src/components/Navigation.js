@@ -18,12 +18,19 @@ const Navigation = () => {
     <Wrapper>
       <div className="navigation">
         <div className="ryan">
-          <Link to="/" className="me">🖇Ryan Renteria</Link>
+          {darkMode && <Link to="/" className="me-wht">🖇Ryan Renteria</Link>}
+          {!darkMode && <Link to="/" className="me-dark">🖇Ryan Renteria</Link>}
+          {/* <Link to="/" className="me-wht">🖇Ryan Renteria</Link> */}
         </div>
         <div className="links">
-          <Link to="/" className="item" children="Home" />
-          <Link to="/about" className="item">About</Link>
-          <Link to="/projects" className="item">Projects</Link>
+          {darkMode && <Link to="/" className="item-wht" children="Home" />}
+          {!darkMode && <Link to="/" className="item-drk" children="Home" />}
+
+          {darkMode && <Link to="/about" className="item-wht">About</Link>}
+          {!darkMode && <Link to="/about" className="item-drk">About</Link>}
+
+          {darkMode && <Link to="/projects" className="item-wht">Projects</Link>}
+          {!darkMode && <Link to="/projects" className="item-drk">Projects</Link>}
         </div>
         <div className="switch-wrapper">
         {darkMode && <div className="sun-white"></div>}
