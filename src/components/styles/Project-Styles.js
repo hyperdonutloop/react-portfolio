@@ -5,7 +5,11 @@ export const Wrapper = styled.div`
     display: flex;
   }
 
-.nasa {
+  .bottom-row {
+    display: flex;
+  }
+
+.img {
   width: 550px;
 }
 
