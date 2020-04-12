@@ -96,4 +96,8 @@ import styled from 'styled-components';
   
 
   }
+
+  .bottom-text {
+    letter-spacing: 0.1em;
+  }
 `;

@@ -20,7 +20,6 @@ const Navigation = () => {
         <div className="ryan">
           {darkMode && <Link to="/" className="me-wht">🖇Ryan Renteria</Link>}
           {!darkMode && <Link to="/" className="me-dark">🖇Ryan Renteria</Link>}
-          {/* <Link to="/" className="me-wht">🖇Ryan Renteria</Link> */}
         </div>
         <div className="links">
           {darkMode && <Link to="/" className="item-wht" children="Home" />}

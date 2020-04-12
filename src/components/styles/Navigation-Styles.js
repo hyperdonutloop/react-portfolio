@@ -18,23 +18,31 @@ export const Wrapper = styled.div`
     
     .me-wht {
       text-decoration: none;
-      /* filter: contrast(1%); */
-      color: white;
+      color: #FFFFFF;
+      opacity: 65%;
+      font-weight: bold;
     }
 
     .me-dark {
       text-decoration: none;
-      color: black;
+      color: #000000;
+      font-weight: bold;
+      opacity: 67%;
     }
 
     .item-wht {
       text-decoration: none;
-      color: white;
+      color: #FFFFFF;
+      opacity: 65%;
+      font-weight: bold;
     }
 
     .item-drk {
       text-decoration: none;
-      color: black;
+      color: #000000;
+      opacity: 67%;
+      font-weight: bold;
+      
     }
 
     .links a {

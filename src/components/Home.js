@@ -75,7 +75,7 @@ function Home (props) {
                   />
                 </motion.div>.
                 <br />
-                Currently learning GraphQL + Apollo.<br /> 
+                Currently learning antigravity in Python.<br /> 
                 Have an awesome {day}.
               </div>
 
