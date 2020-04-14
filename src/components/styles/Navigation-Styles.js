@@ -20,13 +20,13 @@ export const Wrapper = styled.div`
       text-decoration: none;
       color: #FFFFFF;
       opacity: 65%;
-      font-weight: bold;
+      /* font-weight: bold; */
     }
 
     .me-dark {
       text-decoration: none;
       color: #000000;
-      font-weight: bold;
+      /* font-weight: bold; */
       opacity: 67%;
     }
 
@@ -34,14 +34,14 @@ export const Wrapper = styled.div`
       text-decoration: none;
       color: #FFFFFF;
       opacity: 65%;
-      font-weight: bold;
+      /* font-weight: bold; */
     }
 
     .item-drk {
       text-decoration: none;
       color: #000000;
       opacity: 67%;
-      font-weight: bold;
+      /* font-weight: bold; */
       
     }
 

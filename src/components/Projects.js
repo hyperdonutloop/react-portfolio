@@ -5,7 +5,7 @@ import { Wrapper } from './styles/Project-Styles.js';
 import nasa from '../images/nasa.png';
 import oneline from '../images/oneline.png';
 import todo from '../images/todo.png';
-import { Link } from "react-router-dom";
+import theme from '../images/theme.png'
  
 function Projects (props) {
   return (
@@ -13,7 +13,7 @@ function Projects (props) {
       <div className="main-section">
       <h1>Here are a few things I've built</h1>
         <p>Made with love and dark magic</p>
-      <div className="contents">
+      
         <div className="top-row">
           <div className="cards">
             <a href="https://nasa-ryan.now.sh/" target="_blank">
@@ -38,20 +38,21 @@ function Projects (props) {
             <a href="https://todoreact-ryan.now.sh/" target="_blank" >
               <img className="img" src={todo} />
             </a>
-            <h3>Project Name</h3>
-            <p>brief Description of Project</p>
+            <h3>A simple todo list built with React</h3>
+            <p>Everyone has to have a todo-list. This web app also has fun reminders of what day it is.</p>
           </div>
 
           <div className="cards">
-            <a>
-              <a>Place VSCODE theme image here</a>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" >
+              <img className="img" src={theme} />
             </a>
-            <h3>Project Name</h3>
-            <p>brief Description of Project</p>
+            <h3>Superhuman VS Code theme</h3>
+            <p>I am a huge fan of Superhuman, especially their version of Dark Mode (called Carbon). This theme brings the colors of Superhuman to your workspace.</p>
           </div>
+          
         </div>
 
-      </div>
+      
     </div>
 
     </Wrapper>
