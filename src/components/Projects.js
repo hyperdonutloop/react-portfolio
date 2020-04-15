@@ -11,9 +11,11 @@ function Projects (props) {
   return (
     <Wrapper>
       <div className="main-section">
-      <h1>Here are a few things I've built</h1>
-        <p>Made with love and dark magic</p>
-      
+        <div className="header">
+          <h1>Here are a few things I've built</h1>
+          <p>Made with love and dark magic</p>
+        </div>
+      <div className="contents">
         <div className="top-row">
           <div className="cards">
             <a href="https://nasa-ryan.now.sh/" target="_blank">
@@ -49,10 +51,9 @@ function Projects (props) {
             <h3>Superhuman VS Code theme</h3>
             <p>I am a huge fan of Superhuman, especially their version of Dark Mode (called Carbon). This theme brings the colors of Superhuman to your workspace.</p>
           </div>
-          
         </div>
 
-      
+      </div>
     </div>
 
     </Wrapper>
