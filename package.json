@@ -14,6 +14,7 @@
     "fitty": "^2.3.0",
     "framer": "^1.1.7",
     "framer-motion": "^1.8.3",
+    "jquery": "^3.5.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",

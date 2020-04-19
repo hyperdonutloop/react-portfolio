@@ -6,6 +6,7 @@ import nasa from '../images/nasa.png';
 import oneline from '../images/oneline.png';
 import todo from '../images/todo.png';
 import theme from '../images/theme.png'
+
  
 function Projects (props) {
   return (
@@ -23,7 +24,7 @@ function Projects (props) {
             </a>
             <h5>NASA Photo of the Day</h5>
             <div className="desc">
-              <p>This app pulls the Astronomy Picture of the Day from NASA's API. Added a dark mode switch for fun. Uses local storage for dark mode switching.</p>
+              <p>Discover the cosmos! Every day a different image or photograph of our universe is featured, along with a brief explanation written by an astronomer. Added in a custom hook that lets you view the app in dark mode.</p>
             </div>
             <ul className="tools-list">
               <li>React</li>
@@ -40,7 +41,7 @@ function Projects (props) {
             </a>
             <h5>One Line A Day</h5>
             <div className="desc">
-              <p>The One Line a Day Platform is an easy to use journaling app. Users can log in and start making journal entries. Journal entries can be reviewed, updated, and deleted.</p>
+              <p>The One Line a Day Platform is an easy to use journaling app. Users can log in and start making journal entries. Journal entries can be reviewed, updated, and deleted. Use it to record special memories, or as an everyday journal.</p>
             </div>
             <ul className="tools-list">
               <li>React</li>
@@ -79,7 +80,7 @@ function Projects (props) {
             </a>
             <h5>Superhuman VS Code theme</h5>
             <div className="desc">
-              <p>I am a huge fan of Superhuman, especially their version of Dark Mode (called Carbon). This theme brings the colors of Superhuman to your workspace.</p>
+              <p>Superhuman is amazing, especially their version of Dark Mode, called Carbon. This theme brings the colors of Superhuman to your workspace.</p>
             </div>
             <ul className="tools-list">
               <li>React</li>

@@ -25,12 +25,12 @@ export const Wrapper = styled.div`
 
       .desc {
         /* border: 2px dotted yellow; */
-        padding: 25px;
+        padding: 1rem;
         margin: 1rem;
         background-color: #1f2023;
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
-        font-size: 1.5vmin;
+        font-size: 1rem;
         
   
       }
@@ -78,6 +78,9 @@ export const Wrapper = styled.div`
         background-color: #1f2023;
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
+        font-size: 1rem;
+
+        
       }
 
       h5 {
