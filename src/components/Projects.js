@@ -21,13 +21,16 @@ function Projects (props) {
             <a href="https://nasa-ryan.now.sh/" target="_blank">
               <img className="img" src={nasa} />
             </a>
+            <h5>NASA Photo of the Day</h5>
             <div className="desc">
-              <h3>NASA Photo of the Day</h3>
               <p>This app pulls the Astronomy Picture of the Day from NASA's API. Added a dark mode switch for fun. Uses local storage for dark mode switching.</p>
             </div>
             <ul className="tools-list">
               <li>React</li>
               <li>NASA Web API</li>
+              <li>
+                <a className="source" href="https://github.com/hyperdonutloop/nasa-photo-of-the-day" target="_blank">Source Code</a>
+              </li>
             </ul>
           </div>
 
@@ -43,30 +46,49 @@ function Projects (props) {
               <li>React</li>
               <li>Node.js</li>
               <li>Express</li>
+              <li>
+                <a className="source" href="https://github.com/hyperdonutloop/journal-fe" target="_blank">Source Code</a>
+              </li>
             </ul>
           </div>
-
         </div>
+
         <div className="bottom-row">
 
           <div className="cards">
             <a href="https://todoreact-ryan.now.sh/" target="_blank" >
               <img className="img" src={todo} />
             </a>
+            <h5>A simple todo list built with React</h5>
             <div className="desc">
-              <h3>A simple todo list built with React</h3>
               <p>Everyone has to have a todo-list. Aside from crossing things off your list, this web app also has fun reminders of what day it is.</p>
             </div>
+            <ul className="tools-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>
+                <a className="source" href="https://github.com/hyperdonutloop/reducer-todo" target="_blank">Source Code</a>
+              </li>
+            </ul>
           </div>
 
           <div className="cards">
             <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" >
               <img className="img" src={theme} />
             </a>
+            <h5>Superhuman VS Code theme</h5>
             <div className="desc">
-              <h3>Superhuman VS Code theme</h3>
               <p>I am a huge fan of Superhuman, especially their version of Dark Mode (called Carbon). This theme brings the colors of Superhuman to your workspace.</p>
             </div>
+            <ul className="tools-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>
+                <a className="source" href="https://github.com/hyperdonutloop/superhuman-theme" target="_blank">Source Code</a>
+              </li>
+            </ul>
           </div>
         </div>
 
