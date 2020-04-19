@@ -23,17 +23,24 @@ export const Wrapper = styled.div`
         margin: 0px 0px 20px;
       }
 
-      .desc {
+      .desc-wht {
         /* border: 2px dotted yellow; */
         padding: 1rem;
         margin: 1rem;
-        background-color: #1f2023;
+        /* background-color: #1f2023; */
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
         font-size: 1rem;
         
-  
       }
+
+        .desc {
+          /* background-color: #FFFFFF; */
+          /* border: 2px dotted pink; */
+          padding: 1rem;
+          margin: 1rem;
+          box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+        }
 
       .tools-list {
         display: flex;
@@ -58,7 +65,7 @@ export const Wrapper = styled.div`
         }
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         display: flex;
         flex-direction: column;
       }
@@ -73,15 +80,15 @@ export const Wrapper = styled.div`
 
       .desc {
         /* border: 2px dotted yellow; */
-        padding: 1rem;
+        /* padding: 1rem;
         margin: 1rem;
         background-color: #1f2023;
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
-        font-size: 1rem;
-
-        
+        font-size: 1rem; */
       }
+
+      
 
       h5 {
         font-size: 28px;
@@ -112,7 +119,7 @@ export const Wrapper = styled.div`
         }
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         display: flex;
         flex-direction: column;
       }
