@@ -8,6 +8,30 @@ export const Wrapper = styled.div`
     padding-bottom: 1%;
     /* background-color: #1f2022; */
     /* border: 2px solid green; */
+
+    .ryan .active-wht {
+      /* text-decoration: underline #A0A4D9; */
+      /* border-bottom: 2px #A0A4D9; */
+      /* border: 2px dotted blue; */
+    }
+
+    .ryan .active-drk {
+      /* text-decoration: underline #A0A4D9; */
+      /* border-bottom: 2px #A0A4D9; */
+      /* border: 2px dotted blue; */
+    }
+
+    .links .active-wht {
+      /* text-decoration: underline #A0A4D9; */
+      /* border-bottom: 2px  solid #A0A4D9; */
+      color: #A0A4D9;
+    }
+
+    .links .active-drk {
+      /* text-decoration: underline #A0A4D9; */
+      /* border-bottom: 2px  solid #A0A4D9; */
+      color: black;
+    }
     
     .ryan {
       /* border: 2px solid pink; */
@@ -20,13 +44,13 @@ export const Wrapper = styled.div`
       text-decoration: none;
       color: #FFFFFF;
       opacity: 65%;
-      /* font-weight: bold; */
+      font-weight: 400;
     }
 
     .me-dark {
       text-decoration: none;
       color: #000000;
-      /* font-weight: bold; */
+      font-weight: 400;
       opacity: 67%;
     }
 
@@ -34,14 +58,14 @@ export const Wrapper = styled.div`
       text-decoration: none;
       color: #FFFFFF;
       opacity: 65%;
-      /* font-weight: bold; */
+      font-weight: 400;
     }
 
     .item-drk {
       text-decoration: none;
       color: #000000;
-      opacity: 67%;
-      /* font-weight: bold; */
+      /* opacity: 67%; */
+      font-weight: 400;
       
     }
 

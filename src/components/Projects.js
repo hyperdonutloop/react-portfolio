@@ -21,16 +21,20 @@ function Projects (props) {
             <a href="https://nasa-ryan.now.sh/" target="_blank">
               <img className="img" src={nasa} />
             </a>
-            <h3>NASA Photo of the Day</h3>
-            <p>An app that pulls the APOD from NASA's API. Built using React.</p>
+            <div className="desc">
+              <h3>NASA Photo of the Day</h3>
+              <p>This app pulls the Astronomy Picture of the Day from NASA's API. Added a dark mode switch for fun. Uses local storage for dark mode switching.</p>
+            </div>
           </div>
 
           <div className="cards">
             <a href="https://journal-fe.now.sh/" target="_blank">
               <img className="img" src={oneline} />
             </a>
-            <h3>Project Name</h3>
-            <p>brief Description of Project</p>
+            <div className="desc">
+              <h3>One Line A Day</h3>
+              <p>Users can log in and start making journal entries. Journal entries can be reviewed, updated, and deleted.</p>
+            </div>
           </div>
 
         </div>
@@ -40,16 +44,20 @@ function Projects (props) {
             <a href="https://todoreact-ryan.now.sh/" target="_blank" >
               <img className="img" src={todo} />
             </a>
-            <h3>A simple todo list built with React</h3>
-            <p>Everyone has to have a todo-list. This web app also has fun reminders of what day it is.</p>
+            <div className="desc">
+              <h3>A simple todo list built with React</h3>
+              <p>Everyone has to have a todo-list. Aside from crossing things off your list, this web app also has fun reminders of what day it is.</p>
+            </div>
           </div>
 
           <div className="cards">
             <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" >
               <img className="img" src={theme} />
             </a>
-            <h3>Superhuman VS Code theme</h3>
-            <p>I am a huge fan of Superhuman, especially their version of Dark Mode (called Carbon). This theme brings the colors of Superhuman to your workspace.</p>
+            <div className="desc">
+              <h3>Superhuman VS Code theme</h3>
+              <p>I am a huge fan of Superhuman, especially their version of Dark Mode (called Carbon). This theme brings the colors of Superhuman to your workspace.</p>
+            </div>
           </div>
         </div>
 

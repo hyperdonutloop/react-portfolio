@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 
   .main-section {
-    border: 2px dotted red;
+    /* border: 2px dotted red; */
     /* display: flex;
     flex-direction: row; */
     .header {
@@ -14,8 +14,13 @@ export const Wrapper = styled.div`
       text-align: center;
       padding: 1rem;
       margin: 1rem;
-      border: 2px dashed yellowgreen;
+      /* border: 2px dashed yellowgreen; */
       display: flex;
+
+      .desc {
+        /* border: 2px dotted yellow; */
+        padding: 0.5rem;
+      }
 
       @media screen and (max-width: 600px) {
         display: flex;
@@ -28,7 +33,17 @@ export const Wrapper = styled.div`
       text-align: center;
       padding: 1rem;
       margin: 1rem;
-      border: 2px dashed yellowgreen;
+      /* border: 2px dashed yellowgreen; */
+
+      .desc {
+        /* border: 2px dotted yellow; */
+        padding: 0.5rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+      }
 
     }
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 //styles
 import { Wrapper } from './styles/Navigation-Styles.js'
@@ -18,18 +18,18 @@ const Navigation = () => {
     <Wrapper>
       <div className="navigation">
         <div className="ryan">
-          {darkMode && <Link to="/" className="me-wht">🖇Ryan Renteria</Link>}
-          {!darkMode && <Link to="/" className="me-dark">🖇Ryan Renteria</Link>}
+          {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht">🖇Ryan Renteria</NavLink>}
+          {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark">🖇Ryan Renteria</NavLink>}
         </div>
         <div className="links">
-          {darkMode && <Link to="/" className="item-wht" children="Home" />}
-          {!darkMode && <Link to="/" className="item-drk" children="Home" />}
+          {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="item-wht" children="Home" />}
+          {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="item-drk" children="Home" />}
 
-          {darkMode && <Link to="/about" className="item-wht">About</Link>}
-          {!darkMode && <Link to="/about" className="item-drk">About</Link>}
+          {darkMode && <NavLink to="/about" activeClassName="active-wht" className="item-wht">About</NavLink>}
+          {!darkMode && <NavLink to="/about" activeClassName="active-drk" className="item-drk">About</NavLink>}
 
-          {darkMode && <Link to="/projects" className="item-wht">Projects</Link>}
-          {!darkMode && <Link to="/projects" className="item-drk">Projects</Link>}
+          {darkMode && <NavLink to="/projects" activeClassName="active-wht" className="item-wht">Projects</NavLink>}
+          {!darkMode && <NavLink to="/projects" activeClassName="active-drk" className="item-drk">Projects</NavLink>}
         </div>
         <div className="switch-wrapper">
         {darkMode && <div className="sun-white"></div>}
