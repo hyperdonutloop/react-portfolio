@@ -25,16 +25,25 @@ function Projects (props) {
               <h3>NASA Photo of the Day</h3>
               <p>This app pulls the Astronomy Picture of the Day from NASA's API. Added a dark mode switch for fun. Uses local storage for dark mode switching.</p>
             </div>
+            <ul className="tools-list">
+              <li>React</li>
+              <li>NASA Web API</li>
+            </ul>
           </div>
 
           <div className="cards">
             <a href="https://journal-fe.now.sh/" target="_blank">
               <img className="img" src={oneline} />
             </a>
+            <h5>One Line A Day</h5>
             <div className="desc">
-              <h3>One Line A Day</h3>
-              <p>Users can log in and start making journal entries. Journal entries can be reviewed, updated, and deleted.</p>
+              <p>The One Line a Day Platform is an easy to use journaling app. Users can log in and start making journal entries. Journal entries can be reviewed, updated, and deleted.</p>
             </div>
+            <ul className="tools-list">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Express</li>
+            </ul>
           </div>
 
         </div>
