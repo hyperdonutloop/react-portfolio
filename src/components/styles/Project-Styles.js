@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
     flex-direction: row; */
     .header {
       text-align: center;
+
+     
     }
 
     .top-row {
@@ -21,9 +23,12 @@ export const Wrapper = styled.div`
         font-size: 28px;
         font-weight: 600;
         margin: 0px 0px 20px;
+        /* border: 2px dashed pink; */
+        /* color: #A0A4D9; */
       }
 
-      .desc-wht {
+
+      .desc {
         /* border: 2px dotted yellow; */
         padding: 1rem;
         margin: 1rem;
@@ -34,13 +39,6 @@ export const Wrapper = styled.div`
         
       }
 
-        .desc {
-          /* background-color: #FFFFFF; */
-          /* border: 2px dotted pink; */
-          padding: 1rem;
-          margin: 1rem;
-          box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
-        }
 
       .tools-list {
         display: flex;
@@ -79,13 +77,12 @@ export const Wrapper = styled.div`
       /* border: 2px dashed yellowgreen; */
 
       .desc {
-        /* border: 2px dotted yellow; */
-        /* padding: 1rem;
+        padding: 1rem;
         margin: 1rem;
-        background-color: #1f2023;
+        /* background-color: #1f2023; */
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
-        font-size: 1rem; */
+        font-size: 1rem;
       }
 
       
@@ -94,6 +91,7 @@ export const Wrapper = styled.div`
         font-size: 28px;
         font-weight: 600;
         margin: 0px 0px 20px;
+        /* color: #A0A4D9; */
       }
 
       .tools-list {
