@@ -21,12 +21,12 @@ function Projects (props) {
     <Wrapper>
       <div className="main-section">
         <div className="header">
-          <h1>Here are a few things I've built</h1>
+          {/* <h1>Here are a few things I've built</h1> */}
         </div>
       <div className="contents">
         <div className="top-row">
           <div className="cards">
-          <h5>NASA Photo of the Day</h5>
+          <h5> 🛰&nbsp;NASA Photo of the Day</h5>
             <a href="https://nasa-ryan.now.sh/" target="_blank">
               <img className="img" src={nasa} />
             </a>
@@ -45,7 +45,7 @@ function Projects (props) {
           </div>
 
           <div className="cards">
-          <h5>One Line A Day</h5>
+          <h5> 📖&nbsp;One Line A Day</h5>
             <a href="https://journal-fe.now.sh/" target="_blank">
               <img className="img" src={oneline} />
             </a>
@@ -67,7 +67,7 @@ function Projects (props) {
         <div className="bottom-row">
 
           <div className="cards">
-          <h5>Things</h5>
+          <h5> 📝&nbsp;Things</h5>
             <a href="https://todoreact-ryan.now.sh/" target="_blank" >
               <img className="img" src={todo} />
             </a>
@@ -85,7 +85,7 @@ function Projects (props) {
           </div>
 
           <div className="cards">
-          <h5>Superhuman VS Code theme</h5>
+          <h5>⚡&nbsp;Superhuman VS Code theme</h5>
             <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" >
               <img className="img" src={theme} />
             </a>

@@ -7,12 +7,12 @@ export const Wrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    max-width: 50rem;
+    max-width: 45rem;
     width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding: 1rem;
-    /* border: 2px solid pink; */
+    border: 2px solid pink;
     
     /* h2, h3, h5 {
       display: flex;
@@ -35,6 +35,8 @@ export const Wrapper = styled.div`
       /* line-height: 1.5; */
       margin-top: 1rem;
       margin-bottom: 1rem;
+      /* border: 2px dotted pink; */
+      line-height: 1.4;
     }
 
     .skillz {

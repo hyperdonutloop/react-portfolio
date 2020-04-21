@@ -3,12 +3,15 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 
   .main-section {
+    margin-top: 3rem;
     /* border: 2px dotted red; */
     /* display: flex;
     flex-direction: row; */
     .header {
       text-align: center;
-
+      /* border: 2px dashed pink; */
+      margin-bottom: 2rem;
+      font-size: 0.4rem;
      
     }
 
@@ -18,6 +21,13 @@ export const Wrapper = styled.div`
       margin: 1rem;
       /* border: 2px dashed yellowgreen; */
       display: flex;
+      margin-bottom: 2rem;
+
+      .cards {
+        @media screen and (max-width: 750px) {
+        margin-bottom: 4rem;
+      }
+      }
 
       h5 {
         font-size: 28px;
@@ -25,6 +35,7 @@ export const Wrapper = styled.div`
         margin: 0px 0px 20px;
         /* border: 2px dashed pink; */
         /* color: #A0A4D9; */
+        
       }
 
 
