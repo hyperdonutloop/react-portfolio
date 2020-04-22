@@ -19,20 +19,46 @@ const theBounce = {
   // ease: "easeInOut"
 }
 
-const pageTransitions = {
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    x: "-100vw",
+    scale: 0.8
+  },
   in: {
-    opacity: 1
+    opacity: 1,
+    x: 0,
+    scale: 1
   },
   out: {
-    opacity: 0
+    opacity: 0,
+    x: "100vw",
+    scale: 1.2
   }
+};
+
+const pageTransition = {
+  type: "tween",
+  ease: "anticipate",
+  duration: 0.5
+};
+
+const pageStyle = {
+  position: "relative"
 };
 
 
 function About (props) {
   return (
     <Wrapper>
-      <motion.div initial='out' animate='in' exit='out' variants={pageTransitions}>
+      <motion.div
+        style={pageStyle}
+        initial='out' 
+        animate='in' 
+        exit='out' 
+        variants={pageVariants} 
+        transition={pageTransition}
+      >
         <div className="main-section">
           <div className="article">
             <br />

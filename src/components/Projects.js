@@ -9,13 +9,32 @@ import oneline from '../images/oneline.png';
 import todo from '../images/todo.png';
 import theme from '../images/theme.png'
 
-const pageTransitions = {
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    x: "-100vw",
+    scale: 0.8
+  },
   in: {
-    opacity: 1
+    opacity: 1,
+    x: 0,
+    scale: 1
   },
   out: {
-    opacity: 0
+    opacity: 0,
+    x: "100vw",
+    scale: 1.2
   }
+};
+
+const pageTransition = {
+  type: "tween",
+  ease: "anticipate",
+  duration: 0.5
+};
+
+const pageStyle = {
+  position: "relative"
 };
 
  
@@ -29,7 +48,15 @@ function Projects (props) {
 
   return (
     <Wrapper>
-      <motion.div initial='out' animate='in' exit='out' variants={pageTransitions} className="main-section">
+      <motion.div
+        style={pageStyle}
+        initial='out' 
+        animate='in' 
+        exit='out' 
+        variants={pageVariants} 
+        transition={pageTransition}
+        className="main-section"
+      >
         <div className="header">
           {/* <h1>Here are a few things I've built</h1> */}
         </div>

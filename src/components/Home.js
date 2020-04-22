@@ -21,13 +21,32 @@ const theBounce = {
   // ease: "easeInOut"
 }
 
-const pageTransitions = {
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    x: "-100vw",
+    scale: 0.8
+  },
   in: {
-    opacity: 1
+    opacity: 1,
+    x: 0,
+    scale: 1
   },
   out: {
-    opacity: 0
+    opacity: 0,
+    x: "100vw",
+    scale: 1.2
   }
+};
+
+const pageTransition = {
+  type: "tween",
+  ease: "anticipate",
+  duration: 0.5
+};
+
+const pageStyle = {
+  position: "relative"
 };
 
 function Home (props) {
@@ -41,7 +60,15 @@ function Home (props) {
   return (
     <Wrapper>
       <section>
-        <motion.div initial='out' animate='in' exit='out' variants={pageTransitions} className="container">
+        <motion.div
+          style={pageStyle}
+          initial='out' 
+          animate='in' 
+          exit='out' 
+          variants={pageVariants} 
+          transition={pageTransition}
+          className="container"
+        >
             <motion.img
               drag 
               dragConstraints={{top: -20, left: -30, right: -30, bottom: -30}} 

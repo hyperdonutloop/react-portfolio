@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="navigation">
+    <div className="navigation" style={{ overflowX: 'hidden', position: 'relative'}}>
       <div className="navigation-sub">
         
         <Navigation />
