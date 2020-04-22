@@ -1,12 +1,22 @@
 import React from "react"
 import { Wrapper } from './styles/Project-Styles.js';
 import useDarkMode from './hooks/useDarkMode.js';
+import { motion } from 'framer-motion';
 
 // images
 import nasa from '../images/nasa.png';
 import oneline from '../images/oneline.png';
 import todo from '../images/todo.png';
 import theme from '../images/theme.png'
+
+const pageTransitions = {
+  in: {
+    opacity: 1
+  },
+  out: {
+    opacity: 0
+  }
+};
 
  
 function Projects (props) {
@@ -19,7 +29,7 @@ function Projects (props) {
 
   return (
     <Wrapper>
-      <div className="main-section">
+      <motion.div initial='out' animate='in' exit='out' variants={pageTransitions} className="main-section">
         <div className="header">
           {/* <h1>Here are a few things I've built</h1> */}
         </div>
@@ -102,7 +112,7 @@ function Projects (props) {
         </div>
 
       </div>
-    </div>
+    </motion.div>
 
     </Wrapper>
   )

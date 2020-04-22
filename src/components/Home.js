@@ -21,6 +21,15 @@ const theBounce = {
   // ease: "easeInOut"
 }
 
+const pageTransitions = {
+  in: {
+    opacity: 1
+  },
+  out: {
+    opacity: 0
+  }
+};
+
 function Home (props) {
   const [ day, setDay ] = React.useState('day')
 
@@ -32,7 +41,7 @@ function Home (props) {
   return (
     <Wrapper>
       <section>
-        <div className="container">
+        <motion.div initial='out' animate='in' exit='out' variants={pageTransitions} className="container">
             <motion.img
               drag 
               dragConstraints={{top: -20, left: -30, right: -30, bottom: -30}} 
@@ -119,7 +128,7 @@ function Home (props) {
                 </a>
               </div>
             </div>    
-        </div>
+        </motion.div>
       </section>
     </Wrapper>
   )

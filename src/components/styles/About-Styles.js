@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
+    margin-top: 7rem;
     max-width: 45rem;
     width: 100%;
     padding-top: 3rem;
@@ -37,6 +37,7 @@ export const Wrapper = styled.div`
       margin-bottom: 1rem;
       /* border: 2px dotted pink; */
       line-height: 1.4;
+      /* font-weight: 300; */
     }
 
     .skillz {
