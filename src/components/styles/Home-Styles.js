@@ -46,19 +46,27 @@ import styled from 'styled-components';
         border: 2px solid green;
       }
 
+      @media screen and (max-width: 800px) {
+        /* font-size: 1.3rem; */
+      }
 
     }
 
 
-    img {
-      max-width: 100%;
+    .avatar {
+      /* max-width: 100%; */
       height: auto;
       object-fit: contain;
       padding-left: 2rem;
       padding-right: 0rem;
       margin-top: 2rem;
       margin-left: 3rem;
+      border: 2px dotted blue;
       
+      @media screen and (max-width: 800px) {
+        border: 2px dashed purple;
+        width: 150px;
+      }
     }
 
     a {
