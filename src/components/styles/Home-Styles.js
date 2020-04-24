@@ -36,8 +36,8 @@ import styled from 'styled-components';
      
       margin-top: 4rem;
       margin-bottom: 4rem;
-      // border: 3px solid red;
-      font-size: 2.25rem;
+      border: 3px solid red;
+      font-size: 2.50rem;
       /* color: #FFFFFF; */
       /* margin-left: 2rem; */
 
@@ -46,15 +46,18 @@ import styled from 'styled-components';
         border: 2px solid green;
       }
 
-      @media screen and (max-width: 800px) {
-        /* font-size: 1.3rem; */
+      @media screen and (max-width: 1055px) {
+        font-size: 2.30rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 1rem;
       }
 
     }
 
-
     .avatar {
-      /* max-width: 100%; */
+      max-width: 100%;
       height: auto;
       object-fit: contain;
       padding-left: 2rem;
@@ -66,6 +69,12 @@ import styled from 'styled-components';
       @media screen and (max-width: 800px) {
         border: 2px dashed purple;
         width: 150px;
+      }
+
+      @media screen and (max-width: 500px) {
+        border: 2px dashed purple;
+        width: 100px;
+        padding-left: 0;
       }
     }
 

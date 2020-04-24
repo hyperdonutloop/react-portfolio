@@ -69,6 +69,7 @@ function Home (props) {
           // transition={pageTransition}
           className="container"
         >
+          
             <motion.img
               drag 
               dragConstraints={{top: -20, left: -30, right: -30, bottom: -30}} 
@@ -80,7 +81,7 @@ function Home (props) {
               src={require('../images/me.png')}
               alt="memoji"
             />
-
+  
             <div>
               <div className="main-font">
                 Hello{' '} 
