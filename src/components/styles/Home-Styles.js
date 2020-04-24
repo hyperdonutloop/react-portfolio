@@ -5,7 +5,7 @@ import styled from 'styled-components';
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
-    max-width: 1024px;
+    max-width: 1024vw;
     // width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -13,6 +13,7 @@ import styled from 'styled-components';
     /* border: 5px dotted palevioletred; */
     display: flex;
     flex-direction: row;
+    padding-left: 5rem;
 
 
     .main-font {
@@ -131,8 +132,8 @@ import styled from 'styled-components';
         font-size: 0.8rem;
         letter-spacing: normal;
         /* border: 1px dashed yellow; */
-        max-width: 100%;
-        overflow-y: auto;
+        /* max-width: 100%;
+        overflow-y: auto; */
         
       }
   }
