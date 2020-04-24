@@ -5,7 +5,7 @@ import styled from 'styled-components';
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
-    max-width: 1024vw;
+    max-width: 1024px;
     // width: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -13,7 +13,6 @@ import styled from 'styled-components';
     /* border: 5px dotted palevioletred; */
     display: flex;
     flex-direction: row;
-    padding-left: 5rem;
 
 
     .main-font {
@@ -52,12 +51,12 @@ import styled from 'styled-components';
         font-size: 2.30rem;
       }
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 375px) {
         font-size: 1em;
         /* margin-left: 2rem; */
-        /* border: 2px dotted green; */
-        text-align: left;
-        width: 400px;
+        border: 2px dotted green;
+        /* text-align: left; */
+        /* width: 400px; */
         margin-bottom: 2rem;
         /* max-width: 100%; */
       }
@@ -80,11 +79,13 @@ import styled from 'styled-components';
       }
 
       @media screen and (max-width: 500px) {
-        /* border: 2px dashed purple; */
+        border: 2px dashed purple;
         width: 100px;
+        margin-left: 0;
+        padding-left: 15px;
         /* padding-right: 2rem; */
-        margin-left: 1rem;
-        padding-top: 50px;
+        
+        /* padding-top: 50px; */
         
       }
     }
