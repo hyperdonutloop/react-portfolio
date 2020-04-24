@@ -82,7 +82,7 @@ function Home (props) {
               alt="memoji"
             />
   
-            <div>
+            <div className="all-text">
               <div className="main-font">
                 Hello{' '} 
                 <span className="wave" role="img" aria-label="wave">👋🏼</span>.

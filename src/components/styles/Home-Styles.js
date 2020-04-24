@@ -14,6 +14,7 @@ import styled from 'styled-components';
     display: flex;
     flex-direction: row;
 
+
     .main-font {
 
       span.wave {
@@ -36,14 +37,14 @@ import styled from 'styled-components';
      
       margin-top: 4rem;
       margin-bottom: 4rem;
-      border: 3px solid red;
+      /* border: 3px solid red; */
       font-size: 2.50rem;
       /* color: #FFFFFF; */
       /* margin-left: 2rem; */
 
       div.motion {
-        max-width: 20%;
-        border: 2px solid green;
+        /* max-width: 20%; */
+        /* border: 2px solid green; */
       }
 
       @media screen and (max-width: 1055px) {
@@ -51,7 +52,13 @@ import styled from 'styled-components';
       }
 
       @media screen and (max-width: 500px) {
-        font-size: 1rem;
+        font-size: 1em;
+        /* margin-left: 2rem; */
+        /* border: 2px dotted green; */
+        text-align: left;
+        width: 400px;
+        margin-bottom: 2rem;
+        /* max-width: 100%; */
       }
 
     }
@@ -64,17 +71,20 @@ import styled from 'styled-components';
       padding-right: 0rem;
       margin-top: 2rem;
       margin-left: 3rem;
-      border: 2px dotted blue;
+      /* border: 2px dotted blue; */
       
       @media screen and (max-width: 800px) {
-        border: 2px dashed purple;
+        /* border: 2px dashed purple; */
         width: 150px;
       }
 
       @media screen and (max-width: 500px) {
-        border: 2px dashed purple;
+        /* border: 2px dashed purple; */
         width: 100px;
-        padding-left: 0;
+        /* padding-right: 2rem; */
+        margin-left: 1rem;
+        padding-top: 50px;
+        
       }
     }
 
@@ -85,7 +95,7 @@ import styled from 'styled-components';
 
     p {
       /* color: #FFFFFF; */
-      font-size: 1.25rem;
+      /* font-size: 1.25rem; */
     }
     
    div.inline-block {
@@ -116,5 +126,14 @@ import styled from 'styled-components';
 
   .bottom-text {
     letter-spacing: 0.1em;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.8rem;
+        letter-spacing: normal;
+        /* border: 1px dashed yellow; */
+        max-width: 100%;
+        overflow-y: auto;
+        
+      }
   }
 `;
