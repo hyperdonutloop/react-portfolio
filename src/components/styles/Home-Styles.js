@@ -39,17 +39,23 @@ import styled from 'styled-components';
      
       margin-top: 4rem;
       margin-bottom: 4rem;
-      border: 3px solid red;
+      /* border: 3px solid red; */
       font-size: 2.50rem;
       /* color: #FFFFFF; */
       /* margin-left: 2rem; */
 
+      /*THIS IS THE MAIN PARAGRAPH MOBILE QUERY*/
       @media screen and (max-width: 500px) {
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         /* border: 2px dotted green; */
         font-size: 1rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0rem;
         margin-top: 3rem;
+        padding: 0.7rem;
+        position: relative;
+        left: -25px;
+        width: 295px;
+        
       }
 
     }
@@ -62,7 +68,7 @@ import styled from 'styled-components';
       padding-right: 0rem;
       margin-top: 2rem;
       margin-left: 3rem;
-      border: 2px dotted blue;
+      /* border: 2px dotted blue; */
       
       @media screen and (max-width: 800px) {
         /* border: 2px dashed purple; */
@@ -70,18 +76,12 @@ import styled from 'styled-components';
       }
 
       @media screen and (max-width: 500px) {
-        border: 2px dashed purple;
-        width: 100px;
+        /* border: 2px dashed purple; */
+        width: 80px;
         margin-left: 0;
-        padding-left: 2rem;
-
-        /* padding-right: 0rem;
-        margin-top: 0rem;
-        margin-left: 0rem; */
-        /* padding-left: 15px; */
-        /* padding-right: 2rem; */
-        
-        /* padding-top: 50px; */
+        padding-left: 1.5rem;
+        position: relative;
+        bottom: 15px;
         
       }
     }
@@ -112,11 +112,15 @@ import styled from 'styled-components';
    .twitter {
      padding: 0.3rem;
      /* border: 2px dotted green; */
+     position: relative;
+        left: -19px;
    }
 
    .github {
      /* border: 2px dotted green; */
      padding: 0.3rem;
+     position: relative;
+        left: -20px;
    }
   
 
@@ -128,10 +132,13 @@ import styled from 'styled-components';
     @media screen and (max-width: 500px) {
         font-size: 0.8rem;
         letter-spacing: normal;
-        border: 2px dashed red;
-        /* max-width: 100%;
-        overflow-y: auto; */
-        
+        /* border: 2px dashed red; */
+        max-width: 100%;
+        /* overflow-y: auto; */
+        position: relative;
+        left: -25px;
+        width: 280px;
+        padding: 0.7rem;
       }
   }
 `;
