@@ -21,11 +21,12 @@ export const Wrapper = styled.div`
       margin: 1rem;
       /* border: 2px dashed yellowgreen; */
       display: flex;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
 
       .cards {
-        @media screen and (max-width: 750px) {
+        @media screen and (max-width: 500px) {
         margin-bottom: 4rem;
+        border: 2px dashed green;
       }
       }
 

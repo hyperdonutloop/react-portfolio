@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -69,29 +70,13 @@ export const Wrapper = styled.div`
       
     }
 
+
+  
+
     .links a {
       padding: 1rem;
       text-decoration: none;
-      /* color: #B2B9C5; */
-      /* filter: contrast(1%); */
-      /* color: #000000; */
-      /* opacity: 80%; */
-      /* margin-top: 1rem; */
-      /* // border: 2px solid blue; */
     }
-
-    /* .sun, .moon {
-      width: 17px;
-      height: 17px;
-    }
-    .sun {
-      background: url('../../images/switch/sun.svg') no-repeat center;
-      background-size: 100%;
-    }
-    .moon {
-      background: url('../../images/switch/moon.svg') no-repeat center;
-      background-size: 100%;
-    } */
 
     .dark-mode__toggle {
       background: #383B40;
@@ -156,10 +141,6 @@ export const Wrapper = styled.div`
     
 } /* toggle-wrapper closing tag*/
 
-@media screen and (max-width: 500px) {
-        border: 2px dashed green;
-        font-size: 1rem;
-      }
 
 }
 `;

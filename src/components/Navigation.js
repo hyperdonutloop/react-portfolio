@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Icon } from 'semantic-ui-react';
 //styles
 import { Wrapper } from './styles/Navigation-Styles.js'
 
@@ -57,7 +58,11 @@ const Navigation = () => {
           {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht">🖇Ryan Renteria</NavLink>}
           {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark">🖇Ryan Renteria</NavLink>}
         </div>
-        <div className="links">
+
+        
+
+        <div className="links" id="mylinks">
+          
           {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="item-wht" children="Home" />}
           {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="item-drk" children="Home" />}
 
