@@ -17,8 +17,8 @@ export const Wrapper = styled.div`
 
     .top-row {
       text-align: center;
-      padding: 1rem;
-      margin: 1rem;
+      /* padding: 1rem; */
+      margin-top: 4rem;
       /* border: 2px dashed yellowgreen; */
       display: flex;
       margin-bottom: 1rem;
@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
       .cards {
         @media screen and (max-width: 500px) {
         margin-bottom: 4rem;
-        border: 2px dashed green;
+        /* border: 2px dashed green; */
       }
       }
 
@@ -84,9 +84,16 @@ export const Wrapper = styled.div`
     .bottom-row {
       display: flex;
       text-align: center;
-      padding: 1rem;
-      margin: 1rem;
+      /* padding: 1rem; */
+      /* margin: 1rem; */
       /* border: 2px dashed yellowgreen; */
+
+      .cards {
+        @media screen and (max-width: 500px) {
+        margin-bottom: 4rem;
+        /* border: 2px dashed purple; */
+        }
+      }
 
       .desc {
         padding: 1rem;
@@ -129,7 +136,7 @@ export const Wrapper = styled.div`
         }
       }
 
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: 500px) {
         display: flex;
         flex-direction: column;
       }

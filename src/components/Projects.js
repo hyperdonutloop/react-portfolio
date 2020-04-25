@@ -1,6 +1,6 @@
 import React from "react"
 import { Wrapper } from './styles/Project-Styles.js';
-import useDarkMode from './hooks/useDarkMode.js';
+// import useDarkMode from './hooks/useDarkMode.js';
 import { motion } from 'framer-motion';
 
 // images
@@ -39,11 +39,11 @@ const pageStyle = {
 
  
 function Projects (props) {
-  const [darkMode, setDarkMode ] = useDarkMode(false);
-  const toggleMode = e => {
-    e.preventDefault();
-    setDarkMode(!darkMode);
-  };
+  // const [darkMode, setDarkMode ] = useDarkMode(false);
+  // const toggleMode = e => {
+  //   e.preventDefault();
+  //   setDarkMode(!darkMode);
+  // };
 
 
   return (
@@ -64,8 +64,8 @@ function Projects (props) {
         <div className="top-row">
           <div className="cards">
           <h5> 🛰&nbsp;NASA Photo of the Day</h5>
-            <a href="https://nasa-ryan.now.sh/" target="_blank">
-              <img className="img" src={nasa} />
+            <a href="https://nasa-ryan.now.sh/" target="_blank" rel="noopener noreferrer">
+              <img className="img" src={nasa} alt="screenshot of website"/>
             </a>
             
 
@@ -76,15 +76,15 @@ function Projects (props) {
               <li>React</li>
               <li>NASA Web API</li>
               <li>
-                <a className="source" href="https://github.com/hyperdonutloop/nasa-photo-of-the-day" target="_blank">Source Code</a>
+                <a className="source" href="https://github.com/hyperdonutloop/nasa-photo-of-the-day" target="_blank" rel="noopener noreferrer">Source Code</a>
               </li>
             </ul>
           </div>
 
           <div className="cards">
-          <h5> 📖&nbsp;One Line A Day</h5>
-            <a href="https://journal-fe.now.sh/" target="_blank">
-              <img className="img" src={oneline} />
+          <h5><span role="img" aria-label="book"> 📖</span>&nbsp;One Line A Day</h5>
+            <a href="https://journal-fe.now.sh/" target="_blank" rel="noopener noreferrer">
+              <img className="img" src={oneline} alt="screenshot of website"/>
             </a>
             
             <div className="desc">
@@ -95,7 +95,7 @@ function Projects (props) {
               <li>Node.js</li>
               <li>Express</li>
               <li>
-                <a className="source" href="https://github.com/hyperdonutloop/journal-fe" target="_blank">Source Code</a>
+                <a className="source" href="https://github.com/hyperdonutloop/journal-fe" target="_blank" rel="noopener noreferrer">Source Code</a>
               </li>
             </ul>
           </div>
@@ -104,9 +104,9 @@ function Projects (props) {
         <div className="bottom-row">
 
           <div className="cards">
-          <h5> 📝&nbsp;Things</h5>
-            <a href="https://todoreact-ryan.now.sh/" target="_blank" >
-              <img className="img" src={todo} />
+          <h5><span role="img" aria-label="pencilpaper"> 📝</span>&nbsp;Things</h5>
+            <a href="https://todoreact-ryan.now.sh/" target="_blank" rel="noopener noreferrer">
+              <img className="img" src={todo} alt="screenshot of website"/>
             </a>
             
             <div className="desc">
@@ -116,15 +116,15 @@ function Projects (props) {
               <li>React</li>
               <li>Redux</li>
               <li>
-                <a className="source" href="https://github.com/hyperdonutloop/reducer-todo" target="_blank">Source Code</a>
+                <a className="source" href="https://github.com/hyperdonutloop/reducer-todo" target="_blank" rel="noopener noreferrer">Source Code</a>
               </li>
             </ul>
           </div>
 
           <div className="cards">
-          <h5>⚡&nbsp;Superhuman VS Code theme</h5>
-            <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" >
-              <img className="img" src={theme} />
+          <h5><span role="img" aria-label="bolt">⚡</span>&nbsp;Superhuman VS Code theme</h5>
+            <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" rel="noopener noreferrer">
+              <img className="img" src={theme} alt="screenshot of website"/>
             </a>
             
             <div className="desc">
@@ -132,7 +132,7 @@ function Projects (props) {
             </div>
             <ul className="tools-list">
               <li>
-                <a className="source" href="https://github.com/hyperdonutloop/superhuman-theme" target="_blank">Source Code</a>
+                <a className="source" href="https://github.com/hyperdonutloop/superhuman-theme" target="_blank" rel="noopener noreferrer">Source Code</a>
               </li>
             </ul>
           </div>

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Icon } from 'semantic-ui-react';
+// import { Icon } from 'semantic-ui-react';
 //styles
 import { Wrapper } from './styles/Navigation-Styles.js'
 
