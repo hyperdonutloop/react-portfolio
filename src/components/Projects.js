@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Wrapper } from './styles/Project-Styles.js';
 // import useDarkMode from './hooks/useDarkMode.js';
 import { motion } from 'framer-motion';
@@ -44,7 +44,6 @@ function Projects (props) {
   //   e.preventDefault();
   //   setDarkMode(!darkMode);
   // };
-
 
   return (
     <Wrapper>
