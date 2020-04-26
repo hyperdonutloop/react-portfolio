@@ -4,21 +4,22 @@ export const Wrapper = styled.div`
   .main-section {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
     margin-top: 7rem;
-    max-width: 45rem;
-    width: 100%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     padding: 1rem;
-    border: 2px solid pink;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    /* border: 2px solid pink; */
     
-    /* h2, h3, h5 {
-      display: flex;
-      justify-content: space-between;
-      border: 2px dotted green;
-    } */
+    
+    @media screen and (max-width:500px) {
+      /* border: 2px dashed green; */
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-top: 1rem;
+      
+    }
 
     li {
       list-style: none;
@@ -45,28 +46,60 @@ export const Wrapper = styled.div`
       justify-content: space-between;
       /* margin-top: 4rem; */
       /* border: 2px solid red; */
+      padding: 1rem;
+
+      @media screen and (max-width:500px) {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px dashed orange; */
+        justify-content: space-around;
+      }
     }
 
     ul {
-      display: flex;
-      flex-direction: column;
-      padding-right: 3px;
-      /* border: 2px dashed blue; */
-      padding-inline-start: 0;
+      /* display: flex;
+      flex-direction: column; */
+      padding: 1rem;
+      border: 2px dashed blue;
+      /* padding-inline-start: 0; */
       margin: 0;
+      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+      text-align: initial;
+
+      @media screen and (max-width:500px) {
+        padding: 1rem;
+        /* justify-content: center; */
+      
+      }
     }
 
     .skillz_category {
-        display: flex;
-        flex-direction: column;
-        margin-right: 5rem;
-        /* border: 2px solid pink; */
-        
+      display: flex;
+      flex-direction: column;
+      margin-right: 5rem;
+      border: 2px dotted pink;
+      
+      
+
+      @media screen and (max-width:500px) {
+        padding: 1rem;
+        /* justify-content: center; */
+        margin-right: 0;
+        /* border: 3px double purple; */
       }
+        
+    }
 
       .skillz_category_label {
         font-weight: 700;
         color: #A0A4D9;
+        margin-bottom: 1rem;
+        /* border: 2px dashed green; */
+        
+
+        @media screen and (max-width:500px) {
+          text-align: center;
+        }
       }
 
       .skillz_category_item {
@@ -74,16 +107,21 @@ export const Wrapper = styled.div`
         padding: 2px;
         margin-right: auto;
         font-size: 0.9rem;
-        
-        
+  
       }
 
     h5 {
       display: flex;
       justify-content: flex-start;
       font-size: 1.125rem;
-      // line-height: 1.5;
-      // border: 3px dotted purple;
+      /* line-height: 1.5;
+      border: 3px dotted purple; */
+    }
+
+    h2 {
+      @media screen and (max-width:500px) {
+          text-align: center;
+        }
     }
   }
 `;

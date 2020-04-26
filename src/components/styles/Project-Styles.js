@@ -25,9 +25,9 @@ export const Wrapper = styled.div`
 
       .cards {
         @media screen and (max-width: 500px) {
-        margin-bottom: 4rem;
-        /* border: 2px dashed green; */
-      }
+          margin-bottom: 4rem;
+          /* border: 2px dashed green; */
+        }
       }
 
       h5 {
