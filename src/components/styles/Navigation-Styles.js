@@ -7,9 +7,18 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     padding-top: 2%;
     padding-bottom: 1%;
-    /* align-items: center;
-    z-index: 1; */
+    align-items: center;
+    z-index: 1;
     
+    #desktop {display: block;}
+    #mobile {display: none;}
+
+    @media screen and (max-width: 500px) {
+
+    #desktop {display: none;}
+    #mobile {display: block;}
+
+    }
 
     /* @media only screen and (max-width: 500px) {
     height: auto;
@@ -45,7 +54,7 @@ export const Wrapper = styled.div`
 
       &.is-expanded {
         overflow: hidden;
-        max-height: 500px; /* approximate max height */
+        max-height: 500px;
         -moz-transition-duration: 0.4s;
         -webkit-transition-duration: 0.4s;
         -o-transition-duration: 0.4s;

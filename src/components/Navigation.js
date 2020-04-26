@@ -64,11 +64,15 @@ const Navigation = () => {
         // transition={pageTransition} 
         className="navigation"
       >
-        <div className="ryan">
+        <div className="ryan" id="desktop">
           {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht">🖇Ryan Renteria</NavLink>}
           {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark">🖇Ryan Renteria</NavLink>}
         </div>
-
+        
+        <div className="ryan" id="mobile">
+          {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht">🖇</NavLink>}
+          {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark">🖇</NavLink>}
+        </div>
         
 
         <div className="links" id="mylinks">
