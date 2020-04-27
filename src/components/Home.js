@@ -6,7 +6,20 @@ import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 // styled components
 import { Wrapper } from './styles/Home-Styles.js';
 
-const theBounceVariants = {
+// const loadingContainerVariants = {
+//   start: {
+//     transition: {
+//       staggerChildren: 0.3
+//     }
+//   },
+//   end: {
+//     transition: {
+//       staggerChildren: 0.3
+//     }
+//   }
+// };
+
+const loadingWordVariants = {
   start: {
     y: "50%"
   },
@@ -15,8 +28,8 @@ const theBounceVariants = {
   }
 };
 
-const theBounce = {
-  duration: 0.5,
+const loadingWordTransition = {
+  duration: 0.7,
   yoyo: Infinity,
   ease: "easeInOut"
 }
@@ -83,27 +96,48 @@ function Home (props) {
             />
   
             <div className="all-text">
-              <div className="main-font">
+
+              {/* MAIN PARAGRAPH STARTS HERE */}
+              <motion.div 
+                className="main-font"
+                // variants={loadingContainerVariants}
+                // initial="start"
+                // animate="end"
+              >
                 Hello{' '} 
                 <span className="wave" role="img" aria-label="wave">👋🏼</span>.
                 <br />I build things using{' '}
-                <motion.div className="inline-block" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>
+                <motion.div 
+                  className="inline-block"
+                  variants={loadingWordVariants}
+                  // transition={loadingWordTransition}
+                  whileHover={{ y: -8, transition: loadingWordTransition }} 
+                  // variants={loadingWordVariants}
+                >
                   <a
                   href="https://reactjs.org/" 
                   target="_blank" 
                   rel="noopener noreferrer" children="React"/></motion.div>
                   ,{' '}
 
-                <motion.div className="inline-block" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>
+                <motion.div 
+                  className="inline-block"
+                  variants={loadingWordVariants}
+                  // transition={loadingWordTransition}
+                  whileHover={{ y: -8, transition: loadingWordTransition }} 
+                  // variants={loadingWordVariants}
+                >
                 <a
                   href="https://redux.js.org/" 
                   target="_blank" 
                   rel="noopener noreferrer" children="Redux" /></motion.div>, and {' '}
 
                 <motion.div 
-                  className="inline-block" 
-                  whileHover={{ y: -8, transition: theBounce}} 
-                  variants={theBounceVariants}
+                  className="inline-block"
+                  variants={loadingWordVariants}
+                  // transition={loadingWordTransition}
+                  whileHover={{ y: -8, transition: loadingWordTransition }} 
+                  // variants={loadingWordVariants}
                 >
                   <a
                     href="https://nodejs.dev/" 
@@ -114,15 +148,16 @@ function Home (props) {
                 <br />
                 Currently learning antigravity in Python.<br /> 
                 Have an awesome {day}.
-              </div>
+              </motion.div>
+              {/* MAIN PARAGRAPH ENDS HERE */}
 
               <div className="bottom-text">
                 <span>
                 Drop me an{' '}
                 <motion.div 
                   className="inline-block-mail" 
-                  whileHover={{ y: -4, transition: theBounce}} 
-                  variants={theBounceVariants}
+                  whileHover={{ y: -4, transition: loadingWordTransition}} 
+                  variants={loadingWordVariants}
                 >
                   <a 
                     href="mailto:ryanerenteria@gmail.com" 
