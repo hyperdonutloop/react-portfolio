@@ -113,15 +113,20 @@ import styled from 'styled-components';
      padding: 0.3rem;
      /* border: 2px dotted green; */
      position: relative;
-        left: -19px;
+    @media screen and (max-width: 500px) {
+      left: -19px;
+      }
+
    }
 
    .github {
      /* border: 2px dotted green; */
      padding: 0.3rem;
      position: relative;
+      @media screen and (max-width: 500px) {
         left: -20px;
-   }
+      }
+    }
   
 
   }

@@ -60,7 +60,7 @@ export const Wrapper = styled.div`
       /* display: flex;
       flex-direction: column; */
       padding: 1rem;
-      border: 2px dashed blue;
+      /* border: 2px dashed green; */
       /* padding-inline-start: 0; */
       margin: 0;
       box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
@@ -77,7 +77,7 @@ export const Wrapper = styled.div`
       display: flex;
       flex-direction: column;
       margin-right: 5rem;
-      border: 2px dotted pink;
+      /* border: 2px dotted pink; */
       
       
 
@@ -94,6 +94,7 @@ export const Wrapper = styled.div`
         font-weight: 700;
         color: #A0A4D9;
         margin-bottom: 1rem;
+        text-align: center;
         /* border: 2px dashed green; */
         
 

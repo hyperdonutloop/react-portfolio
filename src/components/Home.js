@@ -18,7 +18,7 @@ const theBounceVariants = {
 const theBounce = {
   duration: 0.5,
   yoyo: Infinity,
-  // ease: "easeInOut"
+  ease: "easeInOut"
 }
 
 const pageVariants = {
@@ -65,7 +65,7 @@ function Home (props) {
           initial='out' 
           animate='in' 
           exit='out' 
-          variants={pageVariants} 
+          // variants={pageVariants} 
           // transition={pageTransition}
           className="container"
         >

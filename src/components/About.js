@@ -101,9 +101,6 @@ function About (props) {
                   <li className="skillz_category_item">Heroku</li>
                 </ul>
               </div>
-
-              
-
             </div>
         </div>
       </div>
