@@ -7,70 +7,27 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     padding-top: 2%;
     padding-bottom: 1%;
-    align-items: center;
+    /* align-items: center; */
     z-index: 1;
     
+    /*
+    This code removes my name next to the paperclips on mobile view, 
+    so it only shows the paperclips
+    */
+
     #desktop {display: block;}
     #mobile {display: none;}
 
     @media screen and (max-width: 500px) {
 
-    #desktop {display: none;}
-    #mobile {display: block;}
-
-    }
-
-    /* @media only screen and (max-width: 500px) {
-    height: auto;
-    min-height: 50px;
-    display: block;
-    position: relative;
-    
-    .icon {
-      display: inline-block;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
-    ul.collapsed {
-      width: 100%;
+      #desktop {display: none;}
+      #mobile {display: block;}
+      /* border: 2px dashed green; */
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      border: 2px dashed green;
+      justify-content: stretch;
+      padding-top: 3%;
 
-      overflow: hidden;
-      max-height: 0;
-      -moz-transition-duration: 0.4s;
-      -webkit-transition-duration: 0.4s;
-      -o-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-      -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-      -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-      -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-
-      &.is-expanded {
-        overflow: hidden;
-        max-height: 500px;
-        -moz-transition-duration: 0.4s;
-        -webkit-transition-duration: 0.4s;
-        -o-transition-duration: 0.4s;
-        transition-duration: 0.4s;
-        -moz-transition-timing-function: ease-in;
-        -webkit-transition-timing-function: ease-in;
-        -o-transition-timing-function: ease-in;
-        transition-timing-function: ease-in;
-      }
-      li {
-        padding: 15px 10px;
-        margin: 0px 0px;
-        width: 100%;
-      }
     }
-  } */
 
     .ryan .active-wht {
       /* text-decoration: underline #A0A4D9; */
@@ -138,6 +95,13 @@ export const Wrapper = styled.div`
     .links a {
       padding: 1rem;
       text-decoration: none;
+
+      @media screen and (max-width: 500px) {
+        /* border: 2px dashed purple; */
+        margin-right: 0.5rem;
+       
+
+      }
     }
 
     .dark-mode__toggle {

@@ -6,19 +6,6 @@ import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 // styled components
 import { Wrapper } from './styles/Home-Styles.js';
 
-// const loadingContainerVariants = {
-//   start: {
-//     transition: {
-//       staggerChildren: 0.3
-//     }
-//   },
-//   end: {
-//     transition: {
-//       staggerChildren: 0.3
-//     }
-//   }
-// };
-
 const loadingWordVariants = {
   start: {
     y: "50%"

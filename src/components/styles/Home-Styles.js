@@ -110,19 +110,23 @@ import styled from 'styled-components';
    }
 
    .twitter {
-     padding: 0.3rem;
+     padding: 0.5rem;
      /* border: 2px dotted green; */
      position: relative;
-    @media screen and (max-width: 500px) {
-      left: -19px;
+     left: -6px;
+
+      @media screen and (max-width: 500px) {
+        left: -20px;
       }
 
    }
 
    .github {
      /* border: 2px dotted green; */
-     padding: 0.3rem;
+     padding: 0.5rem;
      position: relative;
+     left: -6px;
+
       @media screen and (max-width: 500px) {
         left: -20px;
       }
@@ -133,6 +137,7 @@ import styled from 'styled-components';
 
   .bottom-text {
     letter-spacing: 0.1em;
+    padding-bottom: 0.6rem;
 
     @media screen and (max-width: 500px) {
         font-size: 0.8rem;
