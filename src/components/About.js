@@ -83,6 +83,7 @@ function About (props) {
                   <li className="skillz_category_item">HTML</li>
                   <li className="skillz_category_item">(S)CSS</li>
                   <li className="skillz_category_item">SQL</li>
+                  <li className="skillz_category_item">Python</li>
                 </ul>
               </div>
 
@@ -91,6 +92,7 @@ function About (props) {
                 <ul>
                   <li className="skillz_category_item">React</li>
                   <li className="skillz_category_item">Redux</li>
+                  <li className="skillz_category_item">Django</li>
                   <li className="skillz_category_item">Styled Components</li>
                   <li className="skillz_category_item">Node</li>
                   <li className="skillz_category_item">Glamorous</li>
