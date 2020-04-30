@@ -10,7 +10,54 @@ export const Wrapper = styled.div`
     padding: 1rem;
     text-align: justify;
     letter-spacing: 1.5px;
-    /* border: 2px solid pink; */
+    
+
+    .top {
+      display: flex;
+      align-items: center;
+      /* border: 2px solid pink; */
+
+      @media screen and (max-width:500px) {
+          flex-direction: column-reverse;
+          
+        }
+
+      .words {
+        position: relative;
+        left: -67px;
+        /* border: 2px dotted purple; */
+        padding: 0px 5rem 0px 5rem;
+
+        @media screen and (max-width:500px) {
+          left: inherit;
+          padding-top: 1rem;
+          font-size: 1px;
+          max-width: 100%;
+          padding-top: 1rem;
+          padding-left: 0;
+          padding-right: 0;
+          
+        }
+      }
+    }
+
+    .me {
+      width: 200px;
+      /* margin: 3rem; */
+      /* border: 2px dotted green; */
+      border-radius: 50%;
+      /* padding: 1rem; */
+      position: relative;
+      left: -45px;
+
+      @media screen and (max-width:500px) {
+          width: 150px;
+          left: inherit;
+          
+        }
+      
+    }
+    
     
     
     @media screen and (max-width:500px) {
@@ -34,11 +81,19 @@ export const Wrapper = styled.div`
       /* color: #e2e8f0; */
       font-size: 1.1rem;
       /* line-height: 1.5; */
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      /* margin-top: 1rem;
+      margin-bottom: 1rem; */
+      margin: 1rem;
       /* border: 2px dotted pink; */
       line-height: 1.4;
       /* font-weight: 300; */
+
+      @media screen and (max-width:500px) {
+      font-size: 1rem;
+      margin: 0;
+      line-height: 1.4;
+      
+    }
     }
 
     .skillz {

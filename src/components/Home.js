@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 // styled components
 import { Wrapper } from './styles/Home-Styles.js';
@@ -173,6 +173,16 @@ function Home (props) {
                   rel="noopener noreferrer">
                   <FontAwesomeIcon 
                   icon={faGithub} 
+                  style={{ color: '#A0A4D9' }} 
+                  size="sm" />
+                </a>
+                <a 
+                  className="linkedin"
+                  href="https://www.linkedin.com/in/ryanrenteria/" 
+                  target="_blank" 
+                  rel="noopener noreferrer">
+                  <FontAwesomeIcon 
+                  icon={faLinkedin} 
                   style={{ color: '#A0A4D9' }} 
                   size="sm" />
                 </a>

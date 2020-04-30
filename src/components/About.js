@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import me from '../images/me.jpg';
 
 //styles
 import { Wrapper } from './styles/About-Styles.js'; 
@@ -63,8 +64,14 @@ function About (props) {
           <div className="article">
             <br />
             <motion.h2 className="about" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>About Me</motion.h2>
-            {/* <p>My name is Ryan Renteria. I am a husband and father and have won the World's Greatest Dad championship for 6 years in a row. My role models include, Elon Musk, Tony Stark, and Albus Dumbledore. Hanging out with my family, playing at the beach, and watching movies are a few of the things I enjoy. You can usually find me with cookies and chocolate milk.<br></br></p> */}
-            <p>Hey! I'm Ryan, a software engineering student based in Carlsbad, California. I currently attend Lambda School full-time, and work for Apple part-time. I have worked for Apple for six years, mostly troubleshooting and repairing iOS and MacOS devices. I am currently looking for roles in front-end, back-end, or a combination of both! My motivation to build a great product comes not from the product itself, but how it makes people feel. That is where the true magic is, and that is what inspires me to create something better.</p>
+            <div className="top">
+              <div className="words">
+                <p>Hey! I'm Ryan, a software engineering student based in Carlsbad, California. I currently attend Lambda School full-time, and work for Apple part-time. I have worked for Apple for six years, mostly troubleshooting and repairing iOS and MacOS devices. I am currently looking for roles in front-end, back-end, or a combination of both! My motivation to build a great product comes not from the product itself, but how it makes people feel. That is where the true magic is, and that is what inspires me to create something better.</p>
+              </div>
+              <div className="me">
+                <img className="me" src={require('../images/me.jpg')} />
+              </div>
+            </div>
             <br></br> 
             <motion.h2 className="about" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>Things I know</motion.h2>
 

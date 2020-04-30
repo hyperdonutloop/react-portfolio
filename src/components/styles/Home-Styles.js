@@ -64,8 +64,8 @@ import styled from 'styled-components';
       max-width: 100%;
       height: auto;
       object-fit: contain;
-      padding-left: 2rem;
-      padding-right: 0rem;
+      /* padding-left: 2rem; */
+      /* padding-right: 0rem; */
       margin-top: 2rem;
       margin-left: 3rem;
       /* border: 2px dotted blue; */
@@ -128,12 +128,20 @@ import styled from 'styled-components';
      left: -6px;
 
       @media screen and (max-width: 500px) {
-        left: -20px;
+        left: -25px;
+      }
+  }
+
+  .linkedin {
+     /* border: 2px dotted green; */
+     padding: 0.5rem;
+     position: relative;
+     left: -6px;
+
+      @media screen and (max-width: 500px) {
+        left: -25px;
       }
     }
-  
-
-  }
 
   .bottom-text {
     letter-spacing: 0.1em;
