@@ -19,6 +19,8 @@ export const Wrapper = styled.div`
 
       @media screen and (max-width:500px) {
           flex-direction: column-reverse;
+          /* border: 2px solid pink; */
+          padding-top: 1rem;
           
         }
 

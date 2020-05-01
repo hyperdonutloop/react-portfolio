@@ -143,6 +143,14 @@ import styled from 'styled-components';
         left: -20px;
       }
 
+      @media screen 
+      and (device-width: 414px) 
+      and (device-height: 896px) 
+      and (-webkit-device-pixel-ratio: 2) {
+      
+      left: -28px;
+    }
+
    }
 
    .github {
@@ -154,6 +162,14 @@ import styled from 'styled-components';
       @media screen and (max-width: 500px) {
         left: -25px;
       }
+
+      @media screen 
+      and (device-width: 414px) 
+      and (device-height: 896px) 
+      and (-webkit-device-pixel-ratio: 2) {
+      
+      left: -32px;
+    }
   }
 
   .linkedin {
@@ -165,7 +181,15 @@ import styled from 'styled-components';
       @media screen and (max-width: 500px) {
         left: -25px;
       }
+
+      @media screen 
+      and (device-width: 414px) 
+      and (device-height: 896px) 
+      and (-webkit-device-pixel-ratio: 2) {
+      
+      left: -32px;
     }
+  }
 
   .bottom-text {
     letter-spacing: 0.1em;
@@ -193,6 +217,7 @@ import styled from 'styled-components';
       left: -28px;
       padding: 0.4rem;
       margin-top: 0.4rem;
+      margin-bottom: 0.5rem;
       width: 300px;
     }
   }
