@@ -11,46 +11,46 @@ If you'd like to use this as a base for your portfolio, feel free to fork this r
 
 1. Install Create-React-App
 
-  ```sh
-  npm install -g create-react-app
-  ```
+    ```sh
+    npm install -g create-react-app
+    ```
 
 2. Install the Zeit CLI
 
-  ```sh
-  npm i -g now
-  ```
+    ```sh
+    npm i -g now
+    ```
 
 3. Install dependencies
 
-  ```sh
-  npm install
-  ```
+    ```sh
+    npm install
+    ```
 
 4. Start the development server
 
-  ```sh
-  npm start
-  ```
+    ```sh
+    npm start
+    ```
 
 ## ⚡️ Building and running for production
 
   1. Deploy using now CLI
 
-  ```sh
-  now
-  ```
+    ```sh
+    now
+    ```
 
   2. If you are running `now` for the first time the Zeit CLI needs to know which scope you want to deploy your directory to. You can choose to either link an existing project or to create a new one.
 
-  ```sh
-  $ now
-  ? Set up and deploy “~/web/my-rad-project”? [Y/n] y
-  ? Which scope do you want to deploy to? My Awesome Team
-  ? Link to existing project? [y/N] y
-  ? What’s the name of your existing project? my-rad-project
-  🔗 Linked to awesome-team/my-rad-project (created .now and added it to .gitignore)
-  ```
+    ```sh
+    $ now
+    ? Set up and deploy “~/web/my-rad-project”? [Y/n] y
+    ? Which scope do you want to deploy to? My Awesome Team
+    ? Link to existing project? [y/N] y
+    ? What’s the name of your existing project? my-rad-project
+    🔗 Linked to awesome-team/my-rad-project (created .now and added it to .gitignore)
+    ```
 
 ## 🎨 Colors are based on <a href="https://superhuman.com/" target="_blank">Superhuman</a> and provided as a reference below
 
