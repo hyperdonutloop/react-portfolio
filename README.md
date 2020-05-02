@@ -1,68 +1,67 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">hyperreacted.io</h1>
+<p align="center">
+  The first iteration of <a href="https://hyperreacted.io" target="_blank">hyperreacted.io</a> built with <a href="https://reactjs.org/" target="_blank">React</a> and hosted with <a href="https://vercel.com/blog/zeit-is-now-vercel" target="_blank">ZEIT</a>
+</p>
 
-## Available Scripts
+![Preview](screenshot.png)
 
-In the project directory, you can run:
+## 🛠 Installation and Set Up
 
-### `yarn start`
+If you'd like to use this as a base for your portfolio, feel free to fork this repo!
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Install Create-React-App
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  ```sh
+  npm install -g create-react-app
+  ```
 
-### `yarn test`
+2. Install the Zeit CLI
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  ```sh
+  npm i -g now
+  ```
 
-### `yarn build`
+3. Install dependencies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```sh
+  npm install
+  ```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+4. Start the development server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```sh
+  npm start
+  ```
 
-### `yarn eject`
+## ⚡️ Building and running for production
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  1. Deploy using now CLI
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ```sh
+  now
+  ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  2. If you are running `now` for the first time the Zeit CLI needs to know which scope you want to deploy your directory to. You can choose to either link an existing project or to create a new one.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ```sh
+  $ now
+  ? Set up and deploy “~/web/my-rad-project”? [Y/n] y
+  ? Which scope do you want to deploy to? My Awesome Team
+  ? Link to existing project? [y/N] y
+  ? What’s the name of your existing project? my-rad-project
+  🔗 Linked to awesome-team/my-rad-project (created .now and added it to .gitignore)
+  ```
 
-## Learn More
+## 🎨 Colors are based on <a href="https://superhuman.com/" target="_blank">Superhuman</a> and provided as a reference below
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Surface        | ![#27292d](https://via.placeholder.com/10/27292d?text=+) `#27292d` |
+| Base           | ![#1F2023](https://via.placeholder.com/10/1F2023?text=+) `#1F2023` |
+| Overflow       | ![#010101](https://via.placeholder.com/10/010101?text=+) `#010101` |
+| Lilac          | ![#CE9ECE](https://via.placeholder.com/10/CE9ECE?text=+) `#CE9ECE` |
+| Sunglow        | ![#FFCA33](https://via.placeholder.com/10/FFCA33?text=+) `#FFCA33` |
+| Seagull        | ![#72C0EA](https://via.placeholder.com/10/72C0EA?text=+) `#72C0EA` |
+| Cold Purple    | ![#A0A4D9](https://via.placeholder.com/10/A0A4D9?text=+) `#A0A4D9` |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
