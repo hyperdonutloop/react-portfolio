@@ -37,9 +37,9 @@ If you'd like to use this as a base for your portfolio, feel free to fork this r
 
   1. Deploy using now CLI
 
-    ```sh
-    now
-    ```
+      ```sh
+      now
+      ```
 
   2. If you are running `now` for the first time the Zeit CLI needs to know which scope you want to deploy your directory to. You can choose to either link an existing project or to create a new one.
 
