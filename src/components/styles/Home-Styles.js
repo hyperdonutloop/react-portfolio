@@ -17,7 +17,13 @@ import styled from 'styled-components';
     
 
     .main-font {
-
+      /* font-family: 'Lato', sans-serif;
+      font-family: 'Oswald', sans-serif;
+      font-family: 'Oxygen', sans-serif;
+      font-family: 'Raleway', sans-serif;
+      font-family: 'Roboto', sans-serif; */
+      font-family: 'Karla', sans-serif;
+    
 
       span.wave {
         animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
@@ -40,7 +46,7 @@ import styled from 'styled-components';
       margin-top: 4rem;
       margin-bottom: 4rem;
       /* border: 3px solid red; */
-      font-size: 2.50rem;
+      font-size: 2.46rem;
       /* color: #FFFFFF; */
       /* margin-left: 2rem; */
 
@@ -194,6 +200,8 @@ import styled from 'styled-components';
   .bottom-text {
     letter-spacing: 0.1em;
     padding-bottom: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+    
 
     @media screen and (max-width: 500px) {
         font-size: 0.8rem;

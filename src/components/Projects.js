@@ -64,7 +64,12 @@ function Projects (props) {
           <div className="cards">
           <h5> 🛰&nbsp;NASA Photo of the Day</h5>
             <a href="https://nasa-ryan.now.sh/" target="_blank" rel="noopener noreferrer">
-              <img className="img" src={nasa} alt="screenshot of website"/>
+              <motion.img
+                whileHover={{ scale: 1.03 }}
+                className="img" 
+                src={nasa} 
+                alt="screenshot of website"
+              />
             </a>
             
 
@@ -83,7 +88,12 @@ function Projects (props) {
           <div className="cards">
           <h5><span role="img" aria-label="book"> 📖</span>&nbsp;One Line A Day</h5>
             <a href="https://journal-fe.now.sh/" target="_blank" rel="noopener noreferrer">
-              <img className="img" src={oneline} alt="screenshot of website"/>
+              <motion.img
+                whileHover={{ scale: 1.03 }}
+                className="img" 
+                src={oneline} 
+                alt="screenshot of website"
+              />
             </a>
             
             <div className="desc">
@@ -105,7 +115,12 @@ function Projects (props) {
           <div className="cards">
           <h5><span role="img" aria-label="pencilpaper"> 📝</span>&nbsp;Things</h5>
             <a href="https://todoreact-ryan.now.sh/" target="_blank" rel="noopener noreferrer">
-              <img className="img" src={todo} alt="screenshot of website"/>
+              <motion.img 
+                whileHover={{ scale: 1.03 }}
+                className="img" 
+                src={todo} 
+                alt="screenshot of website"
+              />
             </a>
             
             <div className="desc">
@@ -123,7 +138,12 @@ function Projects (props) {
           <div className="cards">
           <h5><span role="img" aria-label="bolt">⚡</span>&nbsp;Superhuman VS Code theme</h5>
             <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" rel="noopener noreferrer">
-              <img className="img" src={theme} alt="screenshot of website"/>
+              <motion.img 
+                whileHover={{ scale: 1.03 }}
+                className="img" 
+                src={theme} 
+                alt="screenshot of website"
+              />
             </a>
             
             <div className="desc">

@@ -29,6 +29,9 @@ export const Wrapper = styled.div`
         left: -67px;
         /* border: 2px dotted purple; */
         padding: 0px 5rem 0px 5rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        
 
         @media screen and (max-width:500px) {
           left: inherit;
@@ -39,6 +42,10 @@ export const Wrapper = styled.div`
           padding-left: 0;
           padding-right: 0;
           
+        }
+
+        .ryan {
+          color: #72C0EA;
         }
       }
     }
