@@ -29,8 +29,7 @@ export const Wrapper = styled.div`
         left: -67px;
         /* border: 2px dotted purple; */
         padding: 0px 5rem 0px 5rem;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
         
 
         @media screen and (max-width:500px) {
@@ -129,6 +128,7 @@ export const Wrapper = styled.div`
       margin: 0;
       box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
       text-align: initial;
+      font-family: 'Roboto', sans-serif;
 
       @media screen and (max-width:500px) {
         padding: 1rem;
@@ -159,6 +159,7 @@ export const Wrapper = styled.div`
         color: #A0A4D9;
         margin-bottom: 1rem;
         text-align: center;
+        font-family: 'Karla', sans-serif;
         /* border: 2px dashed green; */
         
 
@@ -175,15 +176,16 @@ export const Wrapper = styled.div`
   
       }
 
-    h5 {
+    /* h5 {
       display: flex;
       justify-content: flex-start;
       font-size: 1.125rem;
-      /* line-height: 1.5;
-      border: 3px dotted purple; */
-    }
+      font-family: 'Karla', sans-serif;
+      border: 3px dotted purple;
+    } */
 
     h2 {
+      font-family: 'Karla', sans-serif;
       @media screen and (max-width:500px) {
           text-align: center;
         }

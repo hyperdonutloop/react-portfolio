@@ -17,11 +17,6 @@ import styled from 'styled-components';
     
 
     .main-font {
-      /* font-family: 'Lato', sans-serif;
-      font-family: 'Oswald', sans-serif;
-      font-family: 'Oxygen', sans-serif;
-      font-family: 'Raleway', sans-serif;
-      font-family: 'Roboto', sans-serif; */
       font-family: 'Karla', sans-serif;
     
 
@@ -53,14 +48,14 @@ import styled from 'styled-components';
       /*THIS IS THE MAIN PARAGRAPH MOBILE QUERY*/
       @media screen and (max-width: 500px) {
         /* margin-top: 1rem; */
-        /* border: 2px dotted green; */
+        /* border: 2px dotted palegoldenrod; */
         font-size: 1rem;
         margin-bottom: 0rem;
         margin-top: 3rem;
-        padding: 0.7rem;
+        padding: 0.4rem;
         position: relative;
         left: -25px;
-        width: 295px;
+        width: 320px;
         
       }
 
@@ -96,9 +91,9 @@ import styled from 'styled-components';
 
       @media screen and (max-width: 500px) {
         /* border: 2px dashed purple; */
-        width: 80px;
+        width: 70px;
         margin-left: 0;
-        padding-left: 1.5rem;
+        padding-left: 1.3rem;
         position: relative;
         bottom: 15px;
         
@@ -146,7 +141,7 @@ import styled from 'styled-components';
      left: -6px;
 
       @media screen and (max-width: 500px) {
-        left: -20px;
+        left: -26px;
       }
 
       @media screen 
@@ -185,7 +180,7 @@ import styled from 'styled-components';
      left: -6px;
 
       @media screen and (max-width: 500px) {
-        left: -25px;
+        left: -24px;
       }
 
       @media screen 
@@ -210,7 +205,7 @@ import styled from 'styled-components';
         max-width: 100%;
         /* overflow-y: auto; */
         position: relative;
-        left: -25px;
+        left: -29px;
         width: 280px;
         padding: 0.7rem;
       }
