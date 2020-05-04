@@ -37,7 +37,7 @@ export const Wrapper = styled.div`
           padding-top: 1rem;
           font-size: 1px;
           max-width: 100%;
-          padding-top: 1rem;
+          padding-bottom: 1rem;
           padding-left: 0;
           padding-right: 0;
           
@@ -61,6 +61,7 @@ export const Wrapper = styled.div`
       @media screen and (max-width:500px) {
           width: 150px;
           left: inherit;
+          padding-bottom: 1rem;
           
         }
       

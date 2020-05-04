@@ -31,9 +31,10 @@ export const Wrapper = styled.div`
       }
 
       h5 {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 600;
         margin: 0px 0px 20px;
+        font-family: 'Karla', sans-serif;
         /* border: 2px dashed pink; */
         /* color: #A0A4D9; */
         
@@ -48,6 +49,7 @@ export const Wrapper = styled.div`
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
         font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
         
       }
 
@@ -102,14 +104,16 @@ export const Wrapper = styled.div`
         box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
         line-height: 1.3;
         font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
       }
 
       
 
       h5 {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 600;
         margin: 0px 0px 20px;
+        font-family: 'Karla', sans-serif;
         /* color: #A0A4D9; */
       }
 

@@ -136,7 +136,7 @@ function Projects (props) {
           </div>
 
           <div className="cards">
-          <h5><span role="img" aria-label="bolt">⚡</span>&nbsp;Superhuman VS Code theme</h5>
+          <h5><span role="img" aria-label="bolt">⚡</span>&nbsp;Superhuman VS Code Theme</h5>
             <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" rel="noopener noreferrer">
               <motion.img 
                 whileHover={{ scale: 1.03 }}
