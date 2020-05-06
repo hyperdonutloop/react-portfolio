@@ -9,6 +9,11 @@ export const Wrapper = styled.div`
     padding-bottom: 1%;
     /* align-items: center; */
     z-index: 1;
+    /* opacity: 50%; */
+    /* background-color: rgba(166, 189, 223, 0.4); */
+    /* filter: drop-shadow(5px 5px 15px); */
+    /* backdrop-filter: blur(5px); */
+    /* position: fixed; */
     
     /*
     This code removes my name next to the paperclips on mobile view, 

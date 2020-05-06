@@ -15,9 +15,13 @@ import styled from 'styled-components';
     flex-direction: row;
 
     
-
+    /* MAIN FONT START */ 
     .main-font {
       font-family: 'Karla', sans-serif;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      /* border: 3px solid red; */
+      font-size: 2.46rem;
     
 
       span.wave {
@@ -38,13 +42,6 @@ import styled from 'styled-components';
         100% { transform: rotate(  0.0deg) }
       }
      
-      margin-top: 4rem;
-      margin-bottom: 4rem;
-      /* border: 3px solid red; */
-      font-size: 2.46rem;
-      /* color: #FFFFFF; */
-      /* margin-left: 2rem; */
-
       /*THIS IS THE MAIN PARAGRAPH MOBILE QUERY*/
       @media screen and (max-width: 500px) {
         /* margin-top: 1rem; */
@@ -57,8 +54,9 @@ import styled from 'styled-components';
         left: -25px;
         width: 320px;
         
+        
       }
-
+      /* iPhone 11 */ 
       @media screen 
         and (device-width: 414px) 
         and (device-height: 896px) 
@@ -70,9 +68,34 @@ import styled from 'styled-components';
         padding: 0rem;
         left: -22px;
         margin-top: 4rem;
-      }
 
-    }
+      }
+      /* iPhone 11 Pro */ 
+      @media only screen 
+        and (device-width: 375px) 
+        and (device-height: 812px) 
+        and (-webkit-device-pixel-ratio: 3) { 
+          /* border: 2px dotted green; */
+          width: 290px;
+          margin-top: 3rem;
+          left: -30px;
+          br{content:' ';}
+          br:after{content:' ';}
+
+        }
+      /* IPHONE 8 */
+      @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) { 
+          width: 290px;
+          margin-top: 2rem;
+          left: -30px;
+          br{content:' ';}
+          br:after{content:' ';}
+        }
+
+    } /* MAIN FONT END */ 
 
     .avatar {
       max-width: 100%;
@@ -98,7 +121,7 @@ import styled from 'styled-components';
         bottom: 15px;
         
       }
-
+      /* IPHONE 11 */
       @media screen 
         and (device-width: 414px) 
         and (device-height: 896px) 
@@ -109,6 +132,20 @@ import styled from 'styled-components';
 
         
       }
+      /* iPhone 11 Pro */ 
+      @media only screen 
+        and (device-width: 375px) 
+        and (device-height: 812px) 
+        and (-webkit-device-pixel-ratio: 3) { 
+          bottom: 30px;
+        }
+      /* IPHONE 8 */
+      @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) { 
+          bottom: 40px;
+        }
     }
 
     a {
@@ -209,7 +246,7 @@ import styled from 'styled-components';
         width: 280px;
         padding: 0.7rem;
       }
-    
+    /* IPHONE 11 */
     @media screen 
       and (device-width: 414px) 
       and (device-height: 896px) 
@@ -223,6 +260,16 @@ import styled from 'styled-components';
       margin-bottom: 0.5rem;
       width: 300px;
     }
+    /* IPHONE 11 Pro */
+    @media only screen 
+      and (device-width: 375px) 
+      and (device-height: 812px) 
+      and (-webkit-device-pixel-ratio: 3) { 
+        /* border: 2px dotted green; */
+        position: relative;
+        left: -35px;
+
+      }
   }
 }
 `;

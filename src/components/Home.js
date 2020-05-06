@@ -133,7 +133,7 @@ function Home (props) {
                   />
                 </motion.div>.
                 <br />
-                Currently learning antigravity in Python.<br /> 
+                Currently learning Python.<br /> 
                 Have an awesome {day}.
               </motion.div>
               {/* MAIN PARAGRAPH ENDS HERE */}
