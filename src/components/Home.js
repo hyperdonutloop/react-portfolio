@@ -49,7 +49,7 @@ const pageStyle = {
   position: "relative"
 };
 
-function Home (props) {
+function Home () {
   const [ day, setDay ] = React.useState('day')
 
   React.useEffect(() => {
@@ -133,7 +133,7 @@ function Home (props) {
                   />
                 </motion.div>.
                 <br />
-                Currently learning Python.<br /> 
+                Currently studying antigravity in python.<br /> 
                 Have an awesome {day}.
               </motion.div>
               {/* MAIN PARAGRAPH ENDS HERE */}

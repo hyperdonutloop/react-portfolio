@@ -30,13 +30,18 @@ export const Wrapper = styled.div`
         }
       }
 
-      h5 {
-        font-size: 30px;
+      h2 {
+        font-size: 1.6rem;
         font-weight: 600;
         margin: 0px 0px 20px;
         font-family: 'Karla', sans-serif;
         /* border: 2px dashed pink; */
         /* color: #A0A4D9; */
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 500px) {
+        letter-spacing: normal;
+        }
         
       }
 
@@ -109,12 +114,17 @@ export const Wrapper = styled.div`
 
       
 
-      h5 {
-        font-size: 30px;
+      h2 {
+        font-size: 1.6rem;
         font-weight: 600;
         margin: 0px 0px 20px;
         font-family: 'Karla', sans-serif;
         /* color: #A0A4D9; */
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 500px) {
+        letter-spacing: normal;
+        }
       }
 
       .tools-list {
@@ -150,7 +160,7 @@ export const Wrapper = styled.div`
   }
 
 .img {
-  /* width: 500px; */
+  /* width: 400px; */
   height: auto;
   max-width: 100%;
   /* width: 700px */

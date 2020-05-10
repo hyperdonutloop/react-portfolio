@@ -62,7 +62,7 @@ function Projects (props) {
       <div className="contents">
         <div className="top-row">
           <div className="cards">
-          <h5> 🛰&nbsp;NASA Photo of the Day</h5>
+          <h2> NASA Photo of the Day</h2>
             <a href="https://nasa-ryan.now.sh/" target="_blank" rel="noopener noreferrer">
               <motion.img
                 whileHover={{ scale: 1.03 }}
@@ -86,7 +86,7 @@ function Projects (props) {
           </div>
 
           <div className="cards">
-          <h5><span role="img" aria-label="book"> 📖</span>&nbsp;One Line A Day</h5>
+          <h2>One Line A Day</h2>
             <a href="https://journal-fe.now.sh/" target="_blank" rel="noopener noreferrer">
               <motion.img
                 whileHover={{ scale: 1.03 }}
@@ -113,7 +113,7 @@ function Projects (props) {
         <div className="bottom-row">
 
           <div className="cards">
-          <h5><span role="img" aria-label="pencilpaper"> 📝</span>&nbsp;Things</h5>
+          <h2>&nbsp;Things</h2>
             <a href="https://todoreact-ryan.now.sh/" target="_blank" rel="noopener noreferrer">
               <motion.img 
                 whileHover={{ scale: 1.03 }}
@@ -136,7 +136,7 @@ function Projects (props) {
           </div>
 
           <div className="cards">
-          <h5><span role="img" aria-label="bolt">⚡</span>&nbsp;Superhuman VS Code Theme</h5>
+          <h2>&nbsp;Superhuman VS Code Theme</h2>
             <a href="https://marketplace.visualstudio.com/items?itemName=ryan-renteria.superhuman" target="_blank" rel="noopener noreferrer">
               <motion.img 
                 whileHover={{ scale: 1.03 }}

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     /* align-items: center; */
     z-index: 1;
     /* opacity: 50%; */
@@ -14,11 +14,23 @@ export const Wrapper = styled.div`
     /* filter: drop-shadow(5px 5px 15px); */
     /* backdrop-filter: blur(5px); */
     /* position: fixed; */
+    /* padding-bottom: 0.5rem; */
+    /* border: 2px dotted green; */
+
+    .hap {
+      /* border: 2px solid blue; */
+      position: relative;
+      /* left: 50px; */
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 500px) {
+        position:relative;
+        left: -15px;
+
+      }
+    }
     
-    /*
-    This code removes my name next to the paperclips on mobile view, 
-    so it only shows the paperclips
-    */
 
     #desktop {display: block;}
     #mobile {display: none;}
@@ -29,8 +41,10 @@ export const Wrapper = styled.div`
       #mobile {display: block;}
       /* border: 2px dashed green; */
       display: flex;
-      justify-content: stretch;
+      /* justify-content: left; */
       padding-top: 3%;
+      /* position: relative; */
+      /* left: -50px; */
 
     }
 

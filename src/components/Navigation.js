@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-// import { Icon } from 'semantic-ui-react';
+import BoltWht from '../icons/bolt-wht.js'
+import BoltDark from '../icons/bolt-blk.js'
+
 //styles
 import { Wrapper } from './styles/Navigation-Styles.js'
 
 // custom hook
 import useDarkMode from './hooks/useDarkMode.js';
-import { Icon } from 'semantic-ui-react';
 
 const pageVariants = {
   initial: {
@@ -64,31 +65,47 @@ const Navigation = () => {
         // transition={pageTransition} 
         className="navigation"
       >
-        <div className="ryan" id="desktop">
-          {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht">🖇Ryan Renteria</NavLink>}
-          {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark">🖇Ryan Renteria</NavLink>}
-        </div>
-        
-        <div className="ryan" id="mobile">
-          {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht">🖇</NavLink>}
-          {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark">🖇</NavLink>}
-        </div>
-        
+        <div className="hap">
+          <div className="ryan" id="desktop">
+            {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht"></NavLink>}
+            {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark"></NavLink>}
+          </div>
+          
+          <div className="ryan" id="mobile">
+            {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="me-wht"></NavLink>}
+            {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="me-dark"></NavLink>}
+          </div>
+          
 
-        <div className="links" id="mylinks">
-          {/* <span className="icon" onClick={handleToggle}>⚡️</span>
-          <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}> */}
+          <div className="links" id="desktop">
+            {/* <span className="icon" onClick={handleToggle}>⚡️</span>
+            <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}> */}
 
-          {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="item-wht" children="Home" />}
-          {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="item-drk" children="Home" />}
+            {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="item-wht" children="Home" />}
+            {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="item-drk" children="Home" />}
 
-          {darkMode && <NavLink to="/about" activeClassName="active-wht" className="item-wht">About</NavLink>}
-          {!darkMode && <NavLink to="/about" activeClassName="active-drk" className="item-drk">About</NavLink>}
+            {darkMode && <NavLink to="/about" activeClassName="active-wht" className="item-wht">About</NavLink>}
+            {!darkMode && <NavLink to="/about" activeClassName="active-drk" className="item-drk">About</NavLink>}
 
-          {darkMode && <NavLink to="/projects" activeClassName="active-wht" className="item-wht">Projects</NavLink>}
-          {!darkMode && <NavLink to="/projects" activeClassName="active-drk" className="item-drk">Projects</NavLink>}
-          {/* </ul> */}
+            {darkMode && <NavLink to="/projects" activeClassName="active-wht" className="item-wht">Projects</NavLink>}
+            {!darkMode && <NavLink to="/projects" activeClassName="active-drk" className="item-drk">Projects</NavLink>}
+            {/* </ul> */}
+          </div>
+          <div className="links" id="mobile">
+            {/* <span className="icon" onClick={handleToggle}>⚡️</span>
+            <ul className={`collapsed ${isExpanded ? "is-expanded" : ""}`}> */}
 
+            {darkMode && <NavLink to="/" exact activeClassName="active-wht" className="item-wht" children="Home" />}
+            {!darkMode && <NavLink to="/" exact activeClassName="active-drk" className="item-drk" children="Home" />}
+
+            {darkMode && <NavLink to="/about" activeClassName="active-wht" className="item-wht">About</NavLink>}
+            {!darkMode && <NavLink to="/about" activeClassName="active-drk" className="item-drk">About</NavLink>}
+
+            {darkMode && <NavLink to="/projects" activeClassName="active-wht" className="item-wht">Projects</NavLink>}
+            {!darkMode && <NavLink to="/projects" activeClassName="active-drk" className="item-drk">Projects</NavLink>}
+            {/* </ul> */}
+
+          </div>
         </div>
         <div className="switch-wrapper">
         {darkMode && <div className="sun-white"></div>}
