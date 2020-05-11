@@ -63,13 +63,13 @@ export const Wrapper = styled.div`
     .links .active-wht {
       /* text-decoration: underline #A0A4D9; */
       /* border-bottom: 2px  solid #A0A4D9; */
-      color: #A0A4D9;
+      color: #72C0eA;
     }
 
     .links .active-drk {
       /* text-decoration: underline #A0A4D9; */
       /* border-bottom: 2px  solid #A0A4D9; */
-      color: black;
+      color: #72C0eA;
     }
     
     .ryan {

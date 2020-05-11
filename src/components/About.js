@@ -69,7 +69,7 @@ function About (props) {
                 <p>Hey! I'm <span className="ryan">Ryan</span>, a software engineering student based in Carlsbad, California. I currently attend Lambda School full-time, and work for Apple part-time. I have worked for Apple for six years, mostly troubleshooting and repairing iOS and MacOS devices. I am currently looking for roles in front-end, back-end, or a combination of both! My motivation to build a great product comes not from the product itself, but how it makes people feel. That is where the true magic is, and that is what inspires me to create something better.</p>
               </div>
               <div className="me">
-                <img className="me" src={require('../images/me.jpg')} />
+                <img className="me" src={require('../images/ryan.jpg')} />
               </div>
             </div>
             <br></br> 
