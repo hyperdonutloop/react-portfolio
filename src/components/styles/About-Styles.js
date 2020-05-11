@@ -94,7 +94,7 @@ export const Wrapper = styled.div`
       color: #A0A4D9;
     }
 
-    p {
+    .p {
       /* color: #e2e8f0; */
       font-size: 1.1rem;
       /* line-height: 1.5; */
