@@ -66,6 +66,7 @@ function About (props) {
             <motion.h2 className="about" whileHover={{ y: -8, transition: theBounce }} variants={theBounceVariants}>About Me</motion.h2>
             <div className="top">
               <div className="words">
+                {/*CHANGED P TAG TO DIV AND DISABLED READER VIEW ON THIS PARAGRAPH*/}
                 <div className="p">Hey! I'm Ryan, a software engineering student based in Carlsbad, California. I currently attend Lambda School full-time, and work for Apple part-time. I have worked for Apple for six years, mostly troubleshooting and repairing iOS and MacOS devices. I am currently looking for roles in front-end, back-end, or a combination of both! My motivation to build a great product comes not from the product itself, but how it makes people feel. That is where the true magic is, and that is what inspires me to create something better.</div>
               </div>
               <div className="image border">
