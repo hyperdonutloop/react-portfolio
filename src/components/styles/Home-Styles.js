@@ -89,8 +89,8 @@ import styled from 'styled-components';
         and (device-height : 667px) 
         and (-webkit-device-pixel-ratio : 2) { 
           width: 290px;
-          margin-top: 2rem;
-          left: -30px;
+          margin-top: 1rem;
+          left: -23px;
           br{content:' ';}
           br:after{content:' ';}
         }

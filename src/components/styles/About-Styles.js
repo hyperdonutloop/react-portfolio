@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
     .top {
       display: flex;
       align-items: center;
-      border: 2px solid pink;
+      /* border: 2px solid pink; */
 
       @media screen and (max-width:500px) {
           flex-direction: column-reverse;
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
       .words {
         position: relative;
         left: -67px;
-        border: 2px dotted purple;
+        /* border: 2px dotted purple; */
         padding: 0px 5rem 0px 5rem;
         font-family: 'Roboto', sans-serif;
         
@@ -51,10 +51,12 @@ export const Wrapper = styled.div`
     }
 
     .me {
-      width: 200px;
+      width: 250px;
+      /* width: 100%; */
       /* height: 210px; */
       /* margin: 3rem; */
-      border: 2px dotted green;
+      /* border: 2px dotted green; */
+      border-radius: 50%;
       border-radius: 50%;
       /* overflow: hidden; */
       /* padding: 1rem; */
@@ -64,8 +66,9 @@ export const Wrapper = styled.div`
       @media screen and (max-width:500px) {
           width: 150px;
           left: inherit;
-          padding-bottom: 1rem;
+          /* padding-bottom: 1rem; */
           /* border: 2px solid green; */
+          margin-bottom: 1rem;
           
           
         }
